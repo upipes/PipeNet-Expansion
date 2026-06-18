@@ -1,0 +1,9 @@
+1. cavity: Displays as relatively smooth circular or elliptical anomalies with sharp reflective signatures often surrounded by diffraction hyperbolas caused by the air-filled void. Low uniformity due to strong boundary contrasts and fluctuations in reflection strength.
+
+2. crack: Appears as linear discontinuities in texture with abrupt ends, causing localized and sharp non-uniform patterns. The pattern is tightly aligned with the crack's geometry, emphasizing high variability in reflectivity along its trace.
+
+3. loose: Characterized by diffuse and chaotic textures owing to irregular scattering behavior. Lacks a structured pattern, with medium to low uniformity that reflects the random arrangement of the loose material.
+
+4. normal: Exhibits high uniformity, with consistent and predictable layers reflecting steady signal propagation. The texture appears smooth, lacking abrupt disruptions or anomalies, representing well-compacted and homogeneous subsurface material.
+
+5. pipeline: Typically shows recurring hyperbolic patterns or streaks with smooth, well-defined reflections. Uniformity is locally high along the structure but contrasts with surrounding areas, where transitions are apparent at the interface of the pipeline and adjacent material.

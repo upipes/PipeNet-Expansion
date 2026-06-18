@@ -1,0 +1,24 @@
+1. cavity: 
+   Stable evidence: In both domains, cavities remain characterized by strong reflections due to the significant difference in dielectric constant between air and surrounding materials. This will manifest as pronounced hyperbolic signatures in the GPR B-scan.
+   Domain shift: The shape and structure of cavities may change depending on the road surface type, affecting the complexity of reflected wave patterns. For instance, cavities beneath unpaved roads might exhibit more irregular and fragmented hyperbolic signatures due to variable moisture content and earthen material heterogeneity.
+   Boundary cue: Look for hyperbolic patterns combined with regions of strong signal amplitude that suggest subsurface voids filled with air.
+
+2. crack:
+   Stable evidence: Cracks consistently produce abrupt waveform discontinuities and strong reflections due to the presence of air-filled gaps, manifesting as sharp, linear signatures across the B-scan. 
+   Domain shift: In unpaved roads, the response might be muddied by surface roughness and variable composition, leading to less distinct signatures compared to the clean asphalt and concrete scenarios.
+   Boundary cue: Focus on the sharpness and linearity of wave discontinuities, emphasizing consistency across neighboring traces.
+
+3. loose:
+   Stable evidence: Loose conditions provide chaotic and diffuse reflected waves, stemming from increased porosity and reduced material density. This chaotic nature remains observable as diffuse and scattered signal returns.
+   Domain shift: Unpaved roads are likely to exacerbate this chaotically reflected wave effect due to their inherently variable composition compared to relatively homogeneous concrete and asphalt.
+   Boundary cue: Identify regions with diffuse return patterns and irregular signal structures indicating less stable subsurface conditions.
+
+4. normal:
+   Stable evidence: Normal areas are characterized by uniformly smooth waveform signatures, indicating homogenous subsurface material without anomalies. This should be stable across all road surfaces.
+   Domain shift: Surface composition (e.g., asphalt vs. unpaved) could slightly alter signal amplitude or minor surface echo features but should maintain overall uniformity.
+   Boundary cue: Ensure smooth, continuous waveforms with consistent signal propagation, either absent of reflections or with stable, uniform patterns.
+
+5. pipeline:
+   Stable evidence: Pipelines produce consistent hyperbolic reflections due to their cylindrical shape, causing distinct geometric signatures independent of road type.
+   Domain shift: Surface type may affect amplitude and noise levels of reflections; unpaved surfaces could introduce additional noise from uneven interfaces, affecting clarity.
+   Boundary cue: Identify regular, symmetric hyperbolic patterns with high signal amplitude indicating subsurface cylindrical objects, distinguishing from cavities through more coherent, predictable shapes.

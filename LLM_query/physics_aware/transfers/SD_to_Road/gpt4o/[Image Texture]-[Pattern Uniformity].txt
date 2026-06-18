@@ -1,0 +1,24 @@
+1. cavity: 
+   Stable evidence: Strong reflected EM waves, often with multiple reflections and diffraction patterns due to the air's lower dielectric constant.
+   Domain shift: Additional wave reflections might be induced by variations in road surface texture and material composition, especially for unpaved roads where the surface variability is higher compared to concrete and asphalt.
+   Boundary cue: Look for abrupt changes in EM wave intensity and patterns of multipath reflection or diffraction that deepen beneath the surface contour. Differences in amplitude consistency and pattern complexity can distinguish cavities from cracks and loose soil.
+
+2. crack: 
+   Stable evidence: Characteristic reflections from the horizontal gaps, causing abrupt discontinuities in waveforms observable in the B-scan images.
+   Domain shift: Variations in wave reflections can occur due to different surface materials altering crack definition on GPR images. For unpaved roads, cracks may have more diffuse reflections compared to clear reflections under concrete and asphalt.
+   Boundary cue: Focus on areas of consistent wave reflection pattern indicating a pronounced discontinuity, often presenting as parallel lines in B-scan images. A precise change from high to low reflection intensity can help differentiate cracks from loose soil.
+
+3. loose: 
+   Stable evidence: Chaotic reflected waves caused by irregular arrangements in soil properties, indicating areas of high porosity and low density.
+   Domain shift: The irregularity can become more pronounced on unpaved surfaces due to the naturally variable composition of such roads, potentially causing higher noise levels in the reflection patterns.
+   Boundary cue: Seek areas with less uniformity in reflection patterns, very low amplitude consistency, and frequent shifts in waveform propagation paths, which differ from cracks and cavities with more structured echoes.
+
+4. normal: 
+   Stable evidence: Consistent and uniform wave patterns, reflecting a standard, undisturbed underground condition.
+   Domain shift: Normal areas might show slight variations in wave reflections depending on the density and moisture content of unpaved surfaces, which are more variable than concrete and asphalt.
+   Boundary cue: Identify segments with stable, uniform waveforms without abrupt intensity changes or unusual perturbations, consistent across all road types.
+
+5. pipeline: 
+   Stable evidence: Regular wave reflections governed by the positioning and material of the pipeline, generally showing a uniform pattern due to their structured geometry.
+   Domain shift: Variations in waveform reflections can emerge if the pipeline's material reacts differently with surface due to chemical or thermal effects on asphalt and concrete, and less consistent interaction profiles with unpaved surfaces.
+   Boundary cue: Concentrate on symmetrical, repetitive reflection patterns that align with the geometric structure of pipelines. Consistency in reflection patterns helps distinguish pipelines from chaotic reflections of loose soil or irregular cavity formations.

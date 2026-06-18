@@ -1,0 +1,24 @@
+1. cavity:
+   - Stable evidence: The primary stable evidence for cavities is the strong reflection signals due to the contrast between air and surrounding materials like concrete or soil. This is caused by air's significantly lower dielectric constant compared to other materials.
+   - Domain shift: In the target environment, especially on unpaved roads, the surrounding materials might have more variable composition, possibly affecting the diffraction patterns and the distinctiveness of reflections. The reflections might appear less pronounced due to the mixing of soil with a higher moisture content, which could raise its dielectric constant.
+   - Boundary cue: A robust classifier should focus on identifying consistent strong reflections and potential multiples or diffractions indicative of air gaps, even if the amplitude or exact pattern varies with the road material.
+
+2. crack:
+   - Stable evidence: Cracks will consistently generate abrupt discontinuities and reflections due to their typical air-filled nature, causing a distinct break in the GPR waveforms.
+   - Domain shift: The clarity of these reflections may vary in unpaved environments due to a less uniform surface and subsurface structure. In unpaved roads, increased noise from natural surface roughness might obscure some crack reflections.
+   - Boundary cue: The classifier should focus on detecting sharp discontinuities and minor variations in adjacent waveform patterns that are consistent across environments.
+
+3. loose:
+   - Stable evidence: The chaotic reflected waves remain stable evidence, as areas with loose, uncompacted material will consistently show disordered and weak reflection patterns compared to dense formations.
+   - Domain shift: Unpaved surfaces might amplify the chaotic signal nature due to inherent variability and higher natural porosity, potentially making it more challenging to distinguish from a simply disturbed surface.
+   - Boundary cue: Robust classification should include recognizing less coherent signals and broader, irregular return patterns that deviate from structured reflections seen in compact materials.
+
+4. normal:
+   - Stable evidence: Normal areas should consistently show uniform, coherent wave signatures indicative of uninterrupted propagation through homogeneous, compact material.
+   - Domain shift: On unpaved surfaces, natural heterogeneity could introduce minor variations and increase noise levels, slightly affecting signal coherence but should generally still reflect the baseline characteristics of a homogeneous medium.
+   - Boundary cue: The classifier should maintain a threshold for recognizing smooth, continuous, and unbroken waveform patterns distinct from anomaly features and adapt to tolerate slight natural variations.
+
+5. pipeline:
+   - Stable evidence: The presence of pipelines is marked by consistent and predictable hyperbolic reflections due to the geometric shape of the pipeline as it intersects with the GPR scan path.
+   - Domain shift: Varying materials on unpaved roads may alter the strength and resolution of hyperbolic reflections, with potential scattering effects from nearby irregular surfaces.
+   - Boundary cue: The classifier should emphasize detecting the specific hyperbolic signature pattern while accounting for slight distortions or attenuation that could result from the surface or subsurface material differences across road types.

@@ -1,0 +1,9 @@
+1. **cavity**: [Structural Context-Interaction Type] Cavity structures interact with surrounding compact layers by generating strong EM reflections and diffraction patterns, as air-filled voids cause sharp impedance mismatches; weak structural binding here leads to abrupt transitions between coherent road material and void regions.
+
+2. **crack**: [Structural Context-Interaction Type] Horizontal cracks in compact road layers disrupt structural continuity, causing localized wave reflections along the fracture lines, amplified by impedance contrast with air gaps; their interaction with adjacent materials introduces sharp waveform discontinuities but limited diffraction.
+
+3. **loose**: [Structural Context-Interaction Type] Loose soil regions cause irregular wave propagation due to chaotic electromagnetic scattering and diffusive reflections from porous and inhomogeneous material distributed over neighboring compact layers; structural interaction indicators here include variable density profiles and unpredictable interfaces.
+
+4. **normal**: [Structural Context-Interaction Type] Normal areas maintain homogeneous material structure and consistent layer binding, resulting in smooth wave propagation with minimal scattering or reflection variability; weak interaction evidence reinforces undisturbed subsurface conditions.
+
+5. **pipeline**: [Structural Context-Interaction Type] Metallic or non-metallic pipelines interact strongly with their containing medium by generating focused reflections and potential hyperbolic diffraction patterns, as their geometric and material properties create predictable waveform artifacts with respect to compact underground layers.

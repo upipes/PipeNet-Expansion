@@ -1,0 +1,24 @@
+1. cavity:  
+   Stable evidence: In both the source and target domains, cavities will continue to exhibit strong reflections due to the contrast between the cavity's air content and the surrounding material. This is characterized by high-amplitude reflections and potential multiple reflections or diffractions.  
+   Domain shift: In the target domain, unpaved roads might introduce additional noise or irregular reflections due to less homogeneous surface materials, as well as potential varying depths of surface materials that might affect signal penetration and reflection patterns.  
+   Boundary cue: A robust classifier should look for high-amplitude reflections with irregular patterns throughout the B-scan and consider potential attenuation effects in unpaved surfaces.
+
+2. crack:  
+   Stable evidence: Cracks will consistently manifest as discrete, high-contrast horizontal disruptions in GPR waveforms, evidencing interruptions in the continuity of the subsurface material due to air-filled gaps.  
+   Domain shift: On unpaved roads, variations in surface materials can obscure crack reflections or introduce additional noise, making it challenging to discern crack-induced interruptions from surface irregularities. In asphalt, reflective characteristics might vary due to differences in asphalt composition or condition.  
+   Boundary cue: The classifier should focus on detecting consistent horizontal discontinuities amidst different noise and reflective conditions, emphasizing linearly distributed high-amplitude features.
+
+3. loose:  
+   Stable evidence: In both domains, areas of loose soil will show chaotic and irregular reflected wave patterns characterized by lower coherence due to varying porosity and density compared to surrounding materials.  
+   Domain shift: On unpaved roads, the prevalence of naturally loosened surfaces may introduce background noise that resembles the loose class, potentially leading to oversegmentation unless contextual depth information or comparison to known normal conditions is considered.  
+   Boundary cue: The classifier should discern between naturally loose surface features and deeper subsurface irregularities by contextualizing the chaotic patterns in relation to depth and stratigraphy.
+
+4. normal:  
+   Stable evidence: Normal areas consistently signal steady, uniform wave patterns without significant amplitude changes or interruptions, indicating undisturbed stratigraphy.  
+   Domain shift: With unpaved surfaces, the variability in topsoil may introduce slight variations in detection but should not persist deeply, contrasting with deeper structure expected of normal. Asphalt may further attenuate signals, affecting clarity.  
+   Boundary cue: The classifier should emphasize consistent wave patterns reflective of undisturbed subsurface conditions, steering clear of superficial noise on unpaved surfaces.
+
+5. pipeline:  
+   Stable evidence: Pipelines will generally induce consistent, hyperbolic reflections with predictable geometric signatures in both source and target domains, owing to their physical structure and material.  
+   Domain shift: The signal-to-noise ratio may differ in unpaved environments due to scattering or changes in surface roughness, and the depth of the pipeline might affect detectability under varying road types. Asphalt surfaces may alter wave clarity due to their dielectric properties.  
+   Boundary cue: The classifier should be trained to recognize the characteristic hyperbolic patterns and link these patterns to depth-dependent features, maintaining robustness against environmental noise or surface effects.

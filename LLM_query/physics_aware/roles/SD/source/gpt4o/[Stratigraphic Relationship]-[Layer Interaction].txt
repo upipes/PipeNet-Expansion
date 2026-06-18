@@ -1,0 +1,9 @@
+1. cavity: In the stratigraphic relationship, cavities appear as voids disrupting the continuity between layers, often leading to a lack of interaction with adjacent strata except at boundaries where air-filled regions result in notable reflective interfaces.
+
+2. crack: Stratigraphic relationships are notably disrupted as cracks lead to separated and disjointed layers, where wave interactions are characterized by abrupt discontinuities between what otherwise would be contiguous strata.
+
+3. loose: Loose areas disrupt layer interactions by causing diffuse stratigraphic boundaries, with weak and scattered interactions due to the irregular cohesion in the layers, which blur the distinction and connectivity between different subsurface strata.
+
+4. normal: Stratigraphic relationships in normal conditions are regular and consistent, reflecting stable and continuous interactions across homogenous and intact layers, showing predictable and undisturbed wave patterns.
+
+5. pipeline: The stratigraphic relationship with pipelines introduces organized layer disturbances, where interactions are consistent along the length of the pipeline, manifesting as distinct linear disruptions or reflections within the stratified subsurface layers.

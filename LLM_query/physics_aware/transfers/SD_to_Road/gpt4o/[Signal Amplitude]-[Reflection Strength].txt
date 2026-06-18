@@ -1,0 +1,24 @@
+1. cavity:
+   Stable evidence: Cavity regions typically produce strong reflections due to the presence of air, characterized by high signal amplitudes and diffraction patterns. These traits should remain stable across domains, as the physical cause—the air-filled void—does not change.
+   Domain shift: In unpaved surfaces, variations might occur in the reflection patterns due to mixed materials above the cavity or uneven surface putting more emphasis on multiple scattering effects and diffractions. The presence of soil above may also alter the consistency of reflections.
+   Boundary cue: Look for high-amplitude reflections and multi-layer diffraction patterns consistently across varied surfaces, focusing on irregular shapes indicative of air-filled cavities.
+
+2. crack:
+   Stable evidence: Cracks generate abrupt discontinuities in waveforms and strong localized reflections due to gaps filled with air. This physical characteristic should remain stable from concrete to asphalt, as both materials exhibit similar response to cracks.
+   Domain shift: Unpaved roads, composed of varying compactness and materials, may lead to less coherent reflections, making cracks less precise. Environmental factors such as soil moisture might influence the reflection power and waveform shape.
+   Boundary cue: Identify sharp discontinuities in signal amplitude indicating a void and air presence. Ensure robust detection even if cracks appear partially filled or indistinct in material contrast on unpaved surfaces.
+
+3. loose:
+   Stable evidence: Loose soil areas exhibit chaotic wave reflections due to the porous nature and irregular material arrangement. The unstable cohesion creates a recognizable signature that persistently varies across the B-scan.
+   Domain shift: On unpaved roads, the loose class may blend with uncompact soil, worsening signal randomness. The material variance makes it challenging to distinguish from normal soil if not distinctly different in porosity and density.
+   Boundary cue: Classify based on erratic reflection patterns without clear continuity or structure, maintaining focus on areas with reduced signal consistency due to porosity.
+
+4. normal:
+   Stable evidence: A normal subsurface displays uniform reflection patterns indicative of a homogeneous material with no anomalies or disruptive features. This should remain consistent across all road types regardless of surface material.
+   Domain shift: In unpaved environments, detecting normal regions might be challenging due to natural surface variations and material inconsistency, potentially creating subtle irregular reflections not present in paved domains.
+   Boundary cue: Prioritize reflection consistency and absence of disruptors in the waveform to establish areas as normal, factoring in inherent environmental noise expected in unpaved conditions.
+
+5. pipeline:
+   Stable evidence: Pipelines cause definite reflection patterns recognizable by continuous linear features with predictable amplitude responses, likely to remain stable due to the metallic or tubular nature of pipelines.
+   Domain shift: Presence above unpaved surfaces might introduce additional reflections or noise from mixed surface conditions, complicating pipeline recognition. Variability in depth might affect clarity and expected reflectance.
+   Boundary cue: Focus on identifying continuous, structured reflection lines, making allowances for surface-induced noise and depth alterations across material shifts when distinguishing pipelines from other anomalies.

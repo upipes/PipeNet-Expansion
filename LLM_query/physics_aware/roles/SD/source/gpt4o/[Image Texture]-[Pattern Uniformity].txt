@@ -1,0 +1,9 @@
+1. cavity: In the texture of GPR images, cavities often manifest as highly irregular patterns with non-uniform textures due to varying air-filled voids and potential diffraction effects, causing high contrast between adjacent image zones.
+
+2. crack: Image texture reveals cracks as segments with abrupt shifts in uniformity, demonstrating sudden breaks in the pattern along horizontal lines, reflecting the discontinuous thread of the structure.
+
+3. loose: The image texture is marked by a chaotic pattern and low uniformity in loose areas, attributed to the heterogeneous distribution of soil and air elements, leading to diffuse and scattered waveform responses.
+
+4. normal: Normal regions display a uniform pattern with smooth and consistent texture across the image, indicating an undisturbed and homogeneous subsurface without anomalies.
+
+5. pipeline: Pipelines tend to exhibit elongated textures with repeated shapes, presenting a high degree of uniformity along their path due to the consistent reflective characteristics of the pipeline structure.
