@@ -1,0 +1,5 @@
+cavity
+crack
+loose
+normal
+pipeline
