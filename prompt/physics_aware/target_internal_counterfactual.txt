@@ -1,0 +1,17 @@
+You are working only inside the target dataset {target_dataset}.
+Target domain: {target_domain}
+
+Classes:
+{numbered_classes}
+
+Base class priors:
+{class_block}
+
+For each target class, construct a class-level counterfactual in the same target domain:
+1. state the original discriminative cue for this class
+2. replace it with a confusing cue from another target-domain class
+3. explain whether the resulting description still supports the original class or shifts toward the confusing class
+
+Output format:
+1. class_name: Original cue: ... Replaced-with cue: ... Counterfactual effect: ...
+2. ...

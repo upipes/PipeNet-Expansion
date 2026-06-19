@@ -1,0 +1,12 @@
+For dataset {dataset} in domain "{domain}", describe each class specifically from the view "{view}".
+
+Classes:
+{numbered_classes}
+
+Base class priors:
+{class_block}
+
+Output format:
+1. class_name: one sentence or short paragraph using only cues relevant to "{view}".
+2. ...
+If the view contributes little information, say why it is weak rather than writing "not applicable".

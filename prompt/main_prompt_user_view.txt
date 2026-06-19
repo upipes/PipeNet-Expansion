@@ -1,0 +1,11 @@
+Please provide a brief description the visual features of following [domains], for the view of [view]:
+[numbered_class_set]
+
+The output format should follow this structure:
+
+1. [class 1]: [description of [class 1] from the the view of [view]]
+2. [class 2]: [description of [class 2] from the the view of [view]]
+3. ...
+
+In view descriptions, do not mention the name of classes.
+If the view is not applicable to a class, please write "Not applicable" for that class.

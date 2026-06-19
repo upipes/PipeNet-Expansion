@@ -1,0 +1,12 @@
+For dataset {dataset} in domain "{domain}", write target-domain semantic summaries for each class.
+Focus on how the class is expected to appear under this environment rather than only listing generic class properties.
+
+Classes:
+{numbered_classes}
+
+Base class priors:
+{class_block}
+
+Output format:
+1. class_name: one paragraph describing expected target-domain manifestation, attenuation/scattering tendencies, structural context, and robust evidence.
+2. ...

@@ -1,0 +1,19 @@
+You are an expert in GPR B-scan images collected from three different road surfaces: concrete, asphalt, and unpaved (the ultimate goal is image classification), specializing in analyzing and distinguishing the visual characteristics of various B-scan images.
+The GPR images include categories such as: cavity, crack, loose, normal, pipeline.
+Each class is described as follows:
+Cavity: Air-filled underground structures of irregular shapes beneath roads, causing subsidence. Characterized by strong reflected EM waves and potential multiple reflections and diffraction due to air's lower dielectric constant.
+Crack: Presence of horizontal gaps within the compact underground road structure, typically filled with air. These cracks cause wave reflections and abrupt discontinuities in waveforms.
+Normal: Areas without any subsurface anomalies or objects, indicating a standard, undisturbed underground condition.
+Loose: Soil areas with higher porosity and lower density, resulting in reduced cohesion and compactness. This condition, akin to a mix of soil and air, leads to chaotic reflected waves in GPR data due to the irregular arrangement of soil properties.
+Pipeline: Presence of a pipeline object beneath the road surface.
+
+Please provide 10 unique perspectives on how to distinguish between various classes of these GPR B-scan images. The perspectives can vary in granularity, from broader categorizations to finer details.
+
+The output format should follow this structure:
+
+[Primary-Level Category]-[Secondary-Level Detail]
+
+For example:
+1. [Geometric Form]-[Dominant Shape]
+2. [Structural Context]-[Interaction Type]
+3. ...
