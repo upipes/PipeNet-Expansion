@@ -1,0 +1,12 @@
+{
+  "domain": "GPR-SD",
+  "code": "GPR-SD",
+  "type": "road",
+  "Road Surface": "Concrete / asphalt roads",
+  "Frequency Range": "200 400 MHz",
+  "Time Window": "97 ns",
+  "Class": "Cavity, Crack, Loose, Normal, Pipeline",
+  "areaDescription": "A relatively regular road-inspection area dominated by concrete and asphalt pavement conditions. The subsurface background is expected to be comparatively stable, with clear pavement-related layering and moderate material variability. This area provides a consistent reference condition for identifying common subsurface defects and buried utilities.",
+  "signalBehavior": "B-scan responses are expected to show relatively continuous background layers and stable reflection patterns. Targets such as pipelines and cavities tend to preserve recognizable geometric structures, while cracks may appear as localized discontinuities or weak reflection breaks. Background clutter is generally moderate, allowing target-related reflections to remain distinguishable.",
+  "semanticUsage": "When generating class semantics in this area, emphasize reflection continuity, local structural disruption, hyperbola geometry, target-to-background contrast, and depth-relative position. Treat pavement-layer responses as contextual evidence and distinguish them from localized defect or utility signatures."
+}
