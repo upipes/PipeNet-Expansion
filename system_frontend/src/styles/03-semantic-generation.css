@@ -1,0 +1,955 @@
+﻿/* Style module 3 of 6; order is defined by src/styles.css. */
+
+.semantic-empty-state {
+  min-height: 118px;
+  border: 1px dashed rgba(151, 178, 210, 0.72);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(239, 246, 255, 0.84), rgba(239, 253, 249, 0.78));
+  color: #52637a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 18px;
+  text-align: center;
+}
+
+.semantic-empty-state strong {
+  color: #10243f;
+  font-size: 14px;
+}
+
+.semantic-empty-state p {
+  margin: 0;
+  max-width: 320px;
+  color: #607188;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+
+.semantic-scroll.five-cards {
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+}
+
+.semantic-scroll.three-cards {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.semantic-scroll.expanded-list {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding-right: 4px;
+}
+
+.semantic-scroll.expanded-list .semantic-card {
+  min-height: 132px;
+  flex: 0 0 auto;
+}
+
+.semantic-scroll.expanded-list .semantic-card.expanded {
+  min-height: 0;
+  height: auto;
+  overflow: visible;
+}
+
+.semantic-card {
+  min-height: 0;
+  margin-bottom: 0;
+  padding: 15px 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.clickable-card {
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.source .clickable-card:hover {
+  border-color: rgba(47, 110, 234, 0.42);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(240, 247, 255, 0.95));
+  box-shadow: 0 16px 34px rgba(47, 110, 234, 0.15);
+  transform: translateY(-1px);
+}
+
+.target .clickable-card:hover {
+  border-color: rgba(32, 167, 121, 0.42);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(235, 249, 245, 0.95));
+  box-shadow: 0 16px 34px rgba(32, 167, 121, 0.14);
+  transform: translateY(-1px);
+}
+
+.semantic-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 7px;
+}
+
+.class-pill,
+.state-pill {
+  height: 23px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.class-pill {
+  color: var(--blue);
+  background: #edf4ff;
+}
+
+.target .class-pill {
+  color: var(--green);
+  background: #eaf9f4;
+}
+
+.state-pill.ready {
+  color: var(--blue);
+  background: #edf4ff;
+}
+
+.target .state-pill.ready {
+  color: var(--green);
+  background: #eaf9f4;
+}
+
+.state-pill.review {
+  color: var(--blue);
+  background: #edf4ff;
+}
+
+.state-pill.draft {
+  color: var(--blue);
+  background: #edf4ff;
+}
+
+.target .state-pill.review,
+.target .state-pill.draft {
+  color: var(--green);
+  background: #eaf9f4;
+}
+
+.semantic-card h4 {
+  margin: 7px 0 0;
+  font-size: 15px;
+}
+
+.card-toggle {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  background: #edf4ff;
+  box-shadow: inset 0 0 0 1px rgba(47, 110, 234, 0.08);
+}
+
+.class-detail-modal {
+  width: min(1120px, 96vw);
+  max-height: min(860px, 90vh);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(206, 222, 241, 0.9);
+  border-radius: 20px;
+  background:
+          radial-gradient(circle at 88% 10%, rgba(22, 184, 200, 0.14), transparent 18rem),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 250, 255, 0.96));
+  box-shadow: 0 34px 80px rgba(13, 28, 52, 0.28);
+}
+
+.class-detail-modal.target {
+  border-color: rgba(175, 224, 209, 0.94);
+  background:
+          radial-gradient(circle at 88% 10%, rgba(25, 168, 116, 0.14), transparent 18rem),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 252, 249, 0.96));
+}
+
+.class-detail-modal.target .area-detail-head button {
+  background: linear-gradient(135deg, var(--green), var(--cyan));
+}
+
+.class-detail-summary {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  padding: 16px 20px 10px;
+}
+
+.class-detail-summary div {
+  min-width: 0;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(237, 244, 255, 0.82);
+}
+
+.target .class-detail-summary div {
+  background: rgba(234, 249, 244, 0.82);
+}
+
+.class-detail-summary span {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.class-detail-summary strong {
+  display: block;
+  margin-top: 6px;
+  color: #071327;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.class-detail-grid {
+  overflow: auto;
+  padding: 6px 20px 14px;
+}
+
+.class-detail-grid p {
+  user-select: text;
+}
+
+.class-detail-full {
+  grid-column: 1 / -1;
+}
+
+.class-detail-full p {
+  white-space: pre-line;
+}
+
+.class-detail-actions {
+  padding: 0 20px 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.class-detail-actions button {
+  height: 40px;
+  min-width: 86px;
+  border: 0;
+  border-radius: 11px;
+  font-size: 14px;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.class-detail-actions .cancel-class {
+  color: #526276;
+  background: #edf4fb;
+}
+
+.class-detail-actions .save-class {
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--blue), var(--cyan));
+  box-shadow: 0 10px 22px rgba(47, 110, 234, 0.16);
+}
+
+.class-detail-modal.target .class-detail-actions .save-class {
+  background: linear-gradient(135deg, var(--green), var(--cyan));
+  box-shadow: 0 10px 22px rgba(32, 167, 121, 0.16);
+}
+
+.expert-annotation-popover {
+  position: fixed;
+  z-index: 90;
+  width: 292px;
+  padding: 10px;
+  border: 1px solid rgba(207, 221, 238, 0.95);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 18px 42px rgba(13, 28, 52, 0.22);
+}
+
+.expert-annotation-popover span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.expert-annotation-popover div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.expert-annotation-popover button {
+  height: 30px;
+  border: 0;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.expert-annotation-popover .mark-correct {
+  background: linear-gradient(135deg, var(--green), var(--cyan));
+  box-shadow: 0 10px 20px rgba(32, 167, 121, 0.18);
+}
+
+.expert-annotation-popover .mark-inaccurate {
+  background: linear-gradient(135deg, #e8a23c, #f6c560);
+  box-shadow: 0 10px 20px rgba(232, 162, 60, 0.18);
+}
+
+.expert-annotation-popover .mark-incorrect {
+  background: linear-gradient(135deg, #ef4444, #fb7185);
+  box-shadow: 0 10px 20px rgba(239, 68, 68, 0.18);
+}
+
+.expert-annotation-popover .mark-note {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #e8a23c, #f6c560);
+  box-shadow: 0 10px 20px rgba(232, 162, 60, 0.18);
+}
+
+.mark-context-menu {
+  width: 224px;
+}
+
+.mark-context-menu div {
+  grid-template-columns: 1fr;
+}
+
+.expert-annotation-popover .mark-delete {
+  background: linear-gradient(135deg, #ef4444, #fb7185);
+  box-shadow: 0 10px 20px rgba(239, 68, 68, 0.18);
+}
+
+.expert-annotation-popover .mark-open {
+  background: linear-gradient(135deg, var(--blue), var(--cyan));
+  box-shadow: 0 10px 20px rgba(47, 110, 234, 0.18);
+}
+
+.target.expert-annotation-popover .mark-open {
+  background: linear-gradient(135deg, var(--green), var(--cyan));
+  box-shadow: 0 10px 20px rgba(32, 167, 121, 0.18);
+}
+
+.expert-annotation-popover .mark-close {
+  color: #465875;
+  background: #edf2f7;
+  box-shadow: none;
+}
+
+
+.class-detail-grid .expert-mark {
+  display: inline;
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  vertical-align: baseline;
+}
+.expert-mark {
+  padding: 1px 3px;
+  border-radius: 5px;
+  color: inherit;
+  font-weight: inherit;
+  cursor: default;
+  transition: box-shadow 0.16s ease, filter 0.16s ease;
+}
+
+.expert-mark:hover {
+  filter: saturate(1.08);
+  box-shadow: 0 0 0 2px rgba(47, 110, 234, 0.12);
+}
+
+.expert-mark.correct {
+  background: rgba(209, 250, 229, 0.95);
+  box-shadow: inset 0 0 0 1px rgba(16, 185, 129, 0.28);
+}
+
+.expert-mark.inaccurate {
+  background: rgba(254, 243, 199, 0.95);
+  box-shadow: inset 0 0 0 1px rgba(245, 158, 11, 0.32);
+}
+
+.expert-mark.incorrect {
+  background: rgba(254, 226, 226, 0.95);
+  box-shadow: inset 0 0 0 1px rgba(239, 68, 68, 0.26);
+}
+
+
+.expert-annotation-drawer {
+  background:
+          radial-gradient(circle at 100% 0, rgba(22, 184, 200, 0.12), transparent 12rem),
+          rgba(255, 255, 255, 0.98);
+}
+
+.expert-annotation-drawer.target {
+  background:
+          radial-gradient(circle at 100% 0, rgba(25, 168, 116, 0.12), transparent 12rem),
+          rgba(255, 255, 255, 0.98);
+}
+
+.expert-annotation-drawer .el-drawer__header {
+  margin-bottom: 0;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid rgba(215, 226, 239, 0.86);
+}
+
+.expert-annotation-drawer .el-drawer__title {
+  color: #071327;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.expert-annotation-drawer .el-drawer__body {
+  padding: 18px 20px 20px;
+}
+
+.drawer-annotation-body {
+  display: grid;
+  gap: 18px;
+}
+
+.drawer-annotation-body span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.drawer-annotation-body strong {
+  display: block;
+  max-height: 84px;
+  overflow: auto;
+  padding: 10px;
+  border-radius: 12px;
+  color: #17243a;
+  background: rgba(237, 244, 255, 0.82);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.drawer-annotation-body textarea {
+  width: 100%;
+  height: 128px;
+  resize: none;
+  padding: 11px;
+  border: 1px solid rgba(190, 211, 236, 0.9);
+  border-radius: 13px;
+  color: #17243a;
+  background: #f8fbff;
+  font-size: 12px;
+  line-height: 1.45;
+  outline: none;
+}
+
+.drawer-annotation-body textarea:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(47, 110, 234, 0.12);
+}
+
+.expert-annotation-drawer.target .drawer-annotation-body textarea:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(32, 167, 121, 0.12);
+}
+
+.drawer-annotation-body > button {
+  width: 100%;
+  height: 36px;
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--blue), var(--cyan));
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.expert-annotation-drawer.target .drawer-annotation-body > button {
+  background: linear-gradient(135deg, var(--green), var(--cyan));
+}
+
+.target .card-toggle {
+  background: #eaf9f4;
+  box-shadow: inset 0 0 0 1px rgba(32, 167, 121, 0.1);
+}
+
+.card-toggle span {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid var(--blue);
+  transform: rotate(0deg);
+  transition: transform 0.16s ease;
+}
+
+.target .card-toggle span {
+  border-top-color: var(--green);
+}
+
+.semantic-card.expanded .card-toggle span {
+  transform: rotate(180deg);
+}
+
+.card-detail {
+  display: grid;
+  gap: 9px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(237, 244, 255, 0.72);
+  flex: 0 0 auto;
+}
+
+.target .card-detail {
+  background: rgba(234, 249, 244, 0.72);
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.detail-grid div {
+  min-width: 0;
+  padding: 7px 8px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.detail-grid span {
+  display: block;
+  margin-bottom: 3px;
+  color: #0f172a;
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.target .detail-grid span {
+  color: #0f172a;
+}
+
+.card-detail p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.semantic-card.expanded .score-line {
+  margin-top: 12px;
+}
+
+.semantic-card p {
+  margin: 0;
+  color: #45556c;
+  font-size: 12.5px;
+  line-height: 1.44;
+}
+
+.collapsed-detail {
+  display: grid;
+  gap: 6px;
+}
+
+.collapsed-detail.multi {
+  gap: 8px;
+}
+
+.collapsed-detail span,
+.collapsed-detail b {
+  display: block;
+  margin-bottom: 3px;
+  color: #0f172a;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.collapsed-detail p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.collapsed-detail.multi p {
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.score-line {
+  display: grid;
+  grid-template-columns: 110px 1fr 38px;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.score-track {
+  height: 7px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e6eef8;
+}
+
+.score-track i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--blue), var(--cyan));
+}
+
+.target .score-track i {
+  background: linear-gradient(90deg, var(--green), var(--cyan));
+}
+
+.score-line b {
+  color: #3f5068;
+  font-size: 11px;
+}
+
+.reserved-panel {
+  background:
+          linear-gradient(135deg, rgba(47, 110, 234, 0.05), transparent 46%),
+          rgba(255, 255, 255, 0.86);
+}
+
+.reserved-box {
+  flex: 1;
+  margin: 18px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(95, 118, 151, 0.38);
+  border-radius: 20px;
+  background:
+          radial-gradient(circle at 50% 20%, rgba(47, 110, 234, 0.1), transparent 15rem),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(248, 251, 255, 0.44));
+  text-align: center;
+}
+
+.reserved-mark {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+  border-radius: 22px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--blue), var(--cyan));
+  box-shadow: 0 16px 32px rgba(47, 110, 234, 0.22);
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.reserved-box h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.reserved-box p {
+  max-width: 340px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.training-workspace {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  gap: 14px;
+  padding: 18px;
+  background:
+          radial-gradient(circle at 18% 8%, rgba(47, 110, 234, 0.09), transparent 16rem),
+          radial-gradient(circle at 86% 42%, rgba(22, 184, 200, 0.1), transparent 14rem),
+          rgba(244, 248, 252, 0.72);
+}
+
+.training-card {
+  min-width: 0;
+  border: 1px solid rgba(215, 226, 239, 0.9);
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(250, 253, 255, 0.88));
+  box-shadow: 0 12px 28px rgba(37, 54, 84, 0.08);
+}
+
+.training-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px 15px 10px;
+}
+
+.training-section-head.compact {
+  padding-bottom: 8px;
+}
+
+.training-section-head span {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.training-section-head h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.mini-action,
+.train-button {
+  height: 32px;
+  padding: 0 13px;
+  border: 0;
+  border-radius: 11px;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--blue), var(--cyan));
+  box-shadow: 0 12px 24px rgba(47, 110, 234, 0.18);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.model-table {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(215, 226, 239, 0.82);
+  border-radius: 14px;
+}
+
+.classifier-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 0 12px 13px;
+}
+
+.classifier-upload-input {
+  display: none;
+}
+
+.classifier-detail-modal {
+  width: min(620px, 90vw);
+  max-height: min(640px, 84vh);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(206, 222, 241, 0.9);
+  border-radius: 20px;
+  background:
+          radial-gradient(circle at 88% 10%, rgba(22, 184, 200, 0.13), transparent 16rem),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 250, 255, 0.96));
+  box-shadow: 0 34px 80px rgba(13, 28, 52, 0.28);
+}
+
+
+
+.annotation-meta-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.annotation-meta-stack div {
+  min-width: 0;
+}
+
+.annotation-meta-stack strong {
+  max-height: none;
+}
+
+.modal-head-actions .edit-button {
+  color: #ffffff;
+  background: linear-gradient(135deg, #4f7df3, #16b8c8);
+  box-shadow: 0 10px 22px rgba(47, 110, 234, 0.16);
+}
+
+.revise-block {
+  display: grid;
+  gap: 12px;
+}
+
+.drawer-annotation-body textarea.revise-textarea {
+  height: 92px;
+}
+
+.drawer-annotation-body .confirm-revise-button {
+  background: linear-gradient(135deg, #e8a23c, #f6c560);
+  box-shadow: 0 10px 20px rgba(232, 162, 60, 0.18);
+}
+
+.class-detail-grid.editing > div {
+  min-height: 136px;
+}
+
+.detail-edit-textarea {
+  width: 100%;
+  min-height: 108px;
+  resize: vertical;
+  padding: 10px;
+  border: 1px solid rgba(190, 211, 236, 0.9);
+  border-radius: 12px;
+  color: #10192b;
+  background: rgba(248, 251, 255, 0.96);
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.35;
+  outline: none;
+}
+
+.detail-edit-textarea:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(47, 110, 234, 0.12);
+}
+
+.target .detail-edit-textarea:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(32, 167, 121, 0.12);
+}
+
+
+
+/* Expert annotation drawer: one identical label/content rhythm per section. */
+.drawer-annotation-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.drawer-annotation-section {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 24px;
+}
+
+.drawer-annotation-section > span {
+  display: block;
+  margin: 0;
+}
+
+.drawer-annotation-section > strong,
+.drawer-annotation-section > textarea {
+  margin: 0;
+}
+
+.drawer-annotation-section > strong {
+  min-height: 48px;
+  max-height: 96px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.drawer-annotation-section > textarea {
+  height: 132px;
+  box-sizing: border-box;
+}
+
+.drawer-annotation-section.revise-block {
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.drawer-annotation-section .revise-textarea {
+  height: 132px;
+}
+
+.drawer-annotation-body > button {
+  margin: 0;
+}
+
+/* Expert annotation drawer: roomier, consistent vertical rhythm. */
+.drawer-annotation-section {
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.drawer-annotation-section.revise-block {
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+/* Keep the final action visually separated from the preceding content block. */
+.drawer-annotation-body > button {
+  margin-top: -4px;
+}
+
+/* Expert annotation field alignment and matching note/revise box sizes. */
+.drawer-annotation-section > strong {
+  width: 100%;
+  min-height: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 14px;
+  text-align: left;
+  overflow: hidden;
+}
+
+/* Annotation Note and Update Revise use the exact same field dimensions. */
+.drawer-annotation-section > textarea,
+.drawer-annotation-section .revise-textarea {
+  width: 100%;
+  height: 170px;
+  min-height: 170px;
+  box-sizing: border-box;
+  padding: 14px;
+  text-align: left;
+}
+
+/* A1-A4 semantic-card view spacing: slightly tighter title/description rhythm. */
+.semantic-card .collapsed-detail.multi {
+  gap: 5px;
+}
+
+.semantic-card .collapsed-detail.multi .secondary-semantic-head {
+  margin-bottom: 3px;
+}
+
+.semantic-card .collapsed-detail.multi .semantic-secondary-view h4 {
+  margin: 4px 0 0;
+  line-height: 1.2;
+}
+
+.semantic-card .collapsed-detail.multi .semantic-secondary-view p {
+  line-height: 1.3;
+}
+
+.semantic-card > .semantic-head > div:first-child > h4 {
+  margin-top: 13px !important;
+}
+
+.semantic-card .semantic-head {
+  margin-bottom: 5px;
+}
+
+.edit-button {
+  height: 40px;
+  min-width: 96px;
+  padding: 0 24px;
+  border-radius: 11px;
+}
