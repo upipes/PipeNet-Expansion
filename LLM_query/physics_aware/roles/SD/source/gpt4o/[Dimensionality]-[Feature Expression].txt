@@ -1,0 +1,9 @@
+1. cavity: In the [Dimensionality]-[Feature Expression] view, the cavity appears as a distinct void or gap in the subsurface layers, characterized by exaggerated wave reflections and higher amplitude signals due to the stark contrast in dielectric properties between the material and air.
+
+2. crack: From the [Dimensionality]-[Feature Expression] perspective, cracks manifest as horizontal disruptions within the subsurface profile, marked by sudden changes in signal continuity and increased reflection amplitudes that disrupt typical waveform patterns.
+
+3. loose: The [Dimensionality]-[Feature Expression] view highlights loose areas as sections with fluctuating signal strengths and irregular waveform patterns, where diminished density and porosity create diverse reflection angles and chaotic waveforms due to uneven layer cohesion.
+
+4. normal: In the context of [Dimensionality]-[Feature Expression], normal subsurface conditions show consistent and uniform wave propagation, lacking abrupt amplitude changes or unusual echo patterns, thereby indicating a cohesive and homogeneous underground environment.
+
+5. pipeline: The [Dimensionality]-[Feature Expression] view presents pipelines as well-defined linear structures with consistent, repeatable high-amplitude wave reflections, due to the geometric regularity and the dielectric contrast between the pipeline material and surrounding soil.

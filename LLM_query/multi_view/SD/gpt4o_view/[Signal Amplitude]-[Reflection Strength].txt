@@ -1,0 +1,9 @@
+1. cavity: Characterized by high signal amplitude and strong reflection strength due to the contrast between air-filled voids and surrounding materials, leading to pronounced reflections and potential diffraction effects.
+
+2. crack: This causes notable signal amplitude spikes and strong reflections as the GPR waves abruptly encounter the air gaps within the subsurface, creating sharp discontinuities in the reflected waveform.
+
+3. loose: Exhibits low signal amplitude and weak reflection strength because the chaotic, porous nature of loose soil results in scattering and absorption, reducing the overall coherence and reflecting ability of the waves.
+
+4. normal: Displays uniform moderate signal amplitude and reflection strength, indicative of a consistent, homogeneous material composition without significant anomalies or contrasts to alter wave behavior.
+
+5. pipeline: Strong signal amplitude and reflection strength are observed due to the high contrast between the pipeline material and the surrounding earth, leading to clear, continuous reflectors along the pipeline's path.

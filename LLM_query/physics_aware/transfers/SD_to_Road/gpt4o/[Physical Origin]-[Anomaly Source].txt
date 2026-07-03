@@ -1,0 +1,36 @@
+1. **cavity**:  
+   - **Stable evidence**: The strong reflections caused by the presence of air-filled cavities beneath the road surface, along with potential multiple reflections and diffractions that are characteristic of irregular shapes and low dielectric constant air pockets.  
+   - **Domain shift**: In the target domain, the type of overlying surface (concrete, asphalt, or unpaved) can affect the attenuation or scattering of GPR signals. For example, unpaved surfaces might allow stronger penetration of GPR signals but can introduce surface clutter, which may reduce the clarity of cavity detection. Additionally, moisture content differences between environments can alter cavity response.  
+   - **Boundary cue**: Look for localized regions with consistently high reflectivity strength and hyperbolic diffraction patterns indicative of air-filled voids, while filtering out surface noise and clutter predominant in unpaved environments.
+
+---
+
+2. **crack**:  
+   - **Stable evidence**: Horizontal gaps within the structure that generate abrupt discontinuities in waveforms and high-amplitude reflections due to air filling the void. These features are expected to persist regardless of the surface type.  
+   - **Domain shift**: The material and texture of the road surface can introduce variations in how wave signals interact with cracks. For instance, unpaved roads may amplify the scattering effect, while concrete roads might suppress some of the crack-related reflections due to reinforcement or compaction. Moisture content in the cracks can also modify reflections in the target domain.  
+   - **Boundary cue**: Identify short, sharp waveform discontinuities along shallow depths. Classifier boundaries should distinguish between surface noise (e.g., from unpaved or deteriorated roads) and actual crack-induced anomalies.
+
+---
+
+3. **loose**:  
+   - **Stable evidence**: Chaotic and diffuse reflections caused by irregular porosity and a mix of soil and air. The low density and lack of cohesive structure lead to scattered GPR signals.  
+   - **Domain shift**: Road material significantly alters how loose soil is detected. Unpaved surfaces might enhance such chaotic reflections due to direct coupling with the subsurface, while dense concrete or asphalt can dampen weaker signals. Additionally, variations in soil compositions (e.g., clay vs. sand) and moisture levels in unpaved roads can change the amplitude or frequency characteristics of chaotic reflections.  
+   - **Boundary cue**: Focus on areas with diffuse, scattered reflections that lack clear structural patterns. Classifier boundaries must differentiate between loose subsurface and natural variability in unpaved roads.
+
+---
+
+4. **normal**:  
+   - **Stable evidence**: Smooth, consistent signal returns with no discernible anomalies like abrupt changes in amplitude, hyperbolas, or chaotic reflections, indicating standard, undisturbed subsurface layers.  
+   - **Domain shift**: Changes in surface materials across domains will modify the background noise floor and attenuation rates of GPR signals. Unpaved roads are likely to exhibit more surface noise and variability in the first few layers, making it harder to identify "normal" from noisy data. Additionally, differences in subsurface composition (e.g., compacted soil vs. aggregate-based sublayers) can alter signal consistency.  
+   - **Boundary cue**: Ensure the classifier recognizes uniform and predictable signal behavior while being robust to background noise induced by the surface environment.
+
+---
+
+5. **pipeline**:  
+   - **Stable evidence**: Hyperbolic reflection patterns caused by metallic or plastic pipelines, which have a distinct dielectric contrast from the surrounding soil or road material. The localized, elongated reflectors corresponding to pipeline geometry should remain recognizable.  
+   - **Domain shift**: Variations in road surface (e.g., unpaved vs. asphalt vs. concrete) will affect the attenuation and clarity of pipeline-induced hyperbolas. For instance, pipelines under unpaved roads might appear more pronounced due to less signal loss, whereas dense road materials like concrete may obscure weaker reflections. Variations in pipeline material (metal vs. plastic) and surrounding soil composition will also cause shifts in reflection strength and shape.  
+   - **Boundary cue**: Focus on hyperbolic reflection signatures consistent with the geometry of buried pipelines. The classifier should account for attenuated hyperbolas in concrete or asphalt surfaces and enhanced signatures in unpaved environments while disregarding irregular hyperbolic artifacts from noise.
+
+---
+
+In all cases, a robust classifier boundary should rely on signal features closely tied to physical origins of anomalies (e.g., reflectivity patterns, hyperbolas, and discontinuities) while adapting to noise factors and domain-induced variability like scattering, attenuation, and altered frequency response.

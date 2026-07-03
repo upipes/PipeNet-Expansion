@@ -1,0 +1,24 @@
+1. cavity: 
+   Stable evidence: The presence of strong EM reflections due to the low dielectric constant of air within cavities should remain stable across both domains. Characteristic patterns such as hyperbolic shapes and multiple reflections are typical indicators of cavities.
+   Domain shift: The amplitude and clarity of reflections may vary due to the differing densities and moisture contents in unpaved roads compared to concrete and asphalt.
+   Boundary cue: A robust classifier should focus on detecting strong, consistent EM reflections and the distinct hyperbolic geometry indicative of cavities, while discounting less consistent shapes caused by surface variability.
+
+2. crack:
+   Stable evidence: Abrupt discontinuities in waveforms and distinct reflection patterns caused by air-filled gaps should remain consistent.
+   Domain shift: Unpaved roads might introduce additional surface noise and variable moisture levels that obscure or alter the typical crack signature.
+   Boundary cue: The classifier should prioritize sharp waveform discontinuities and the consistent edge reflection patterns associated with cracks, ensuring these are distinguished from normal variations in unpaved environments.
+
+3. loose:
+   Stable evidence: The chaotic wave reflections due to a mix of soil and air within loose soil conditions should be observable regardless of road surface type.
+   Domain shift: Variability in soil composition and moisture content in unpaved roads can exaggerate or obscure chaotic wave patterns.
+   Boundary cue: Emphasis on identifying irregular and non-cohesive wave patterns characteristic of loose soil, ensuring the classifier can separate these from stable substrate signals.
+
+4. normal:
+   Stable evidence: Consistent, undisturbed waveforms indicating a uniform subsurface structure should remain across all domains.
+   Domain shift: Variability in surface characteristics may introduce subtle noise patterns or surface scattering, even in normal conditions, particularly in unpaved or older asphalt surfaces.
+   Boundary cue: The classifier should focus on stable, consistent baseline wave patterns devoid of anomalies, ensuring any domain-induced noise does not misclassify these areas.
+
+5. pipeline:
+   Stable evidence: Distinctive geometries and reflections associated with pipeline structures, which typically appear as hyperbolic patterns, remain crucial identifiers across different surfaces.
+   Domain shift: Differences in surface type and moisture content might affect reflection clarity and depth perception, especially in unpaved roads.
+   Boundary cue: Utilizing geometric form and waveform reflection consistency, the classifier should robustly detect bursts and reflections indicative of pipelines, discriminating these from other regular subsurface structures.

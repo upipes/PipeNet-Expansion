@@ -1,0 +1,117 @@
+{
+    "dataset": "SD",
+    "role": "source",
+    "llm_name": "gpt4o",
+    "classnames": [
+        "cavity",
+        "crack",
+        "loose",
+        "normal",
+        "pipeline"
+    ],
+    "views": [
+        "global",
+        "[Geometric Form]-[Dominant Shape]",
+        "[Structural Context]-[Interaction Type]",
+        "[Signal Amplitude]-[Reflection Strength]",
+        "[Spatial Scale]-[Feature Footprint]",
+        "[Reflection Continuity]-[Signal Coherence]",
+        "[Physical Origin]-[Anomaly Source]",
+        "[Image Texture]-[Pattern Uniformity]",
+        "[Dimensionality]-[Feature Expression]",
+        "[Stratigraphic Relationship]-[Layer Interaction]",
+        "[Waveform Signature]-[Signal Complexity]"
+    ],
+    "raw_files": {
+        "global": "global.txt",
+        "[Geometric Form]-[Dominant Shape]": "[Geometric Form]-[Dominant Shape].txt",
+        "[Structural Context]-[Interaction Type]": "[Structural Context]-[Interaction Type].txt",
+        "[Signal Amplitude]-[Reflection Strength]": "[Signal Amplitude]-[Reflection Strength].txt",
+        "[Spatial Scale]-[Feature Footprint]": "[Spatial Scale]-[Feature Footprint].txt",
+        "[Reflection Continuity]-[Signal Coherence]": "[Reflection Continuity]-[Signal Coherence].txt",
+        "[Physical Origin]-[Anomaly Source]": "[Physical Origin]-[Anomaly Source].txt",
+        "[Image Texture]-[Pattern Uniformity]": "[Image Texture]-[Pattern Uniformity].txt",
+        "[Dimensionality]-[Feature Expression]": "[Dimensionality]-[Feature Expression].txt",
+        "[Stratigraphic Relationship]-[Layer Interaction]": "[Stratigraphic Relationship]-[Layer Interaction].txt",
+        "[Waveform Signature]-[Signal Complexity]": "[Waveform Signature]-[Signal Complexity].txt"
+    },
+    "parsed": {
+        "global": {
+            "cavity": "Cavities are air-filled voids found beneath road surfaces, typically irregular in shape and capable of causing structural subsidence. These anomalies produce strong reflected electromagnetic (EM) waves due to the significant contrast in dielectric constants between air and surrounding materials like soil or concrete. Multiple reflections and diffraction patterns are common as the waves interact with cavity boundaries. Waveform evidence includes pronounced hyperbolic reflections or extended ringing patterns. Discriminative geometric cues include these irregular reflection signatures contrasted against smooth, consistent layers in normal conditions. Confounding factors include the similarity of reflection patterns to those seen near air-filled pipelines or large inhomogeneities.",
+            "crack": "Subsurface cracks are horizontal voids often filled with air within the compact underground structure of roads. These features lead to distinct wave reflections and discontinuities within the GPR B-scan, appearing as sharp horizontal lines or breaks. The waveform may abruptly change as the GPR signal encounters the air-filled gap, disrupting the otherwise smooth propagation pattern. Discriminative cues include horizontal irregularities closely parallel to the surface layer, which set them apart from air-filled cavities that have more vertical or oblique aspects. Confounding factors include differentiating shallow cracks from surface irregularities or false signals near the interface layers.",
+            "loose": "Soil looseness beneath roads manifests in regions of higher porosity and lower density, simulating an air-soil mixture. This condition results in chaotic GPR reflections as waves scatter due to irregular and inconsistent soil structure. The waveform pattern is often diffuse and sporadic, lacking sharp, defined reflection peaks. The discriminative evidence comes from the lack of uniform waveforms; instead, the GPR image may present as a noisy and diffused background, distinctly separate from coherent reflections of pipelines or cavities. Confounders include differentiating loose soil from subsurface layers undergoing natural compaction variance or mixed material presence.",
+            "normal": "Normal subsurface areas denote regions without anomalies, offering a consistent, undisturbed underground landscape. These regions typically exhibit uniform wave propagation with stable and predictable reflectiveness across the GPR scan. The waveform in such zones will show consistent, continuous layers without abrupt changes, reflecting regular compaction and material distribution. Discriminative cues are marked by smooth, parallel bands of reflection across scans, indicating homogeneity. Common confounders include natural material layering that might align closely but are non-anomalous when compared to other conditions.",
+            "pipeline": "Pipelines beneath roads create consistent reflection patterns due to their regular shape and material properties. Because pipelines are typically made of metal or plastic, they contrast sharply with natural subsurface formations, generating strong discrete hyperbolic reflections on GPR scans. These reflectors show defined and repetitive waveform patterns with minimal diffraction. Geometric cues indicative of pipelines include linear or slightly arcuate signatures that can extend across several scan lines. Common confounders can arise from similar geometric shapes such as elongated cavities or large stone formations that mimic pipeline appearances but possess different dielectric properties."
+        },
+        "[Geometric Form]-[Dominant Shape]": {
+            "cavity": "[Irregular-Noncompact] Appears as irregularly shaped zones with chaotic or multiple reflections due to diffraction and air's low dielectric constant, often disrupting surrounding geometric uniformity.",
+            "crack": "[Linear-Air Gap] Exhibits narrow, horizontal linear shapes with abrupt waveform discontinuities, indicating air-filled voids disrupting otherwise compact layers.",
+            "loose": "[Irregular-Diffuse Zone] Manifests as scattered areas of diffuse, irregular shapes with low cohesion, lacking clear geometric boundaries and coherent wave reflections.",
+            "normal": "[Continuous-Homogeneous Layer] Shows uniform, continuous geometric forms of compact, well-ordered layers without anomalies, maintaining consistent GPR waveform patterns.",
+            "pipeline": "[Circular/Hyperbolic-Solid Object] Characterized by distinct hyperbolic or circular geometric forms with sharp, strong reflections, indicating a buried solid structure."
+        },
+        "[Structural Context]-[Interaction Type]": {
+            "cavity": "[Structural Context-Interaction Type] Cavity structures interact with surrounding compact layers by generating strong EM reflections and diffraction patterns, as air-filled voids cause sharp impedance mismatches; weak structural binding here leads to abrupt transitions between coherent road material and void regions.",
+            "crack": "[Structural Context-Interaction Type] Horizontal cracks in compact road layers disrupt structural continuity, causing localized wave reflections along the fracture lines, amplified by impedance contrast with air gaps; their interaction with adjacent materials introduces sharp waveform discontinuities but limited diffraction.",
+            "loose": "[Structural Context-Interaction Type] Loose soil regions cause irregular wave propagation due to chaotic electromagnetic scattering and diffusive reflections from porous and inhomogeneous material distributed over neighboring compact layers; structural interaction indicators here include variable density profiles and unpredictable interfaces.",
+            "normal": "[Structural Context-Interaction Type] Normal areas maintain homogeneous material structure and consistent layer binding, resulting in smooth wave propagation with minimal scattering or reflection variability; weak interaction evidence reinforces undisturbed subsurface conditions.",
+            "pipeline": "[Structural Context-Interaction Type] Metallic or non-metallic pipelines interact strongly with their containing medium by generating focused reflections and potential hyperbolic diffraction patterns, as their geometric and material properties create predictable waveform artifacts with respect to compact underground layers."
+        },
+        "[Signal Amplitude]-[Reflection Strength]": {
+            "cavity": "Characterized by high signal amplitude and strong reflection strength due to the contrast between air-filled voids and surrounding materials, leading to pronounced reflections and potential diffraction effects.",
+            "crack": "This causes notable signal amplitude spikes and strong reflections as the GPR waves abruptly encounter the air gaps within the subsurface, creating sharp discontinuities in the reflected waveform.",
+            "loose": "Exhibits low signal amplitude and weak reflection strength because the chaotic, porous nature of loose soil results in scattering and absorption, reducing the overall coherence and reflecting ability of the waves.",
+            "normal": "Displays uniform moderate signal amplitude and reflection strength, indicative of a consistent, homogeneous material composition without significant anomalies or contrasts to alter wave behavior.",
+            "pipeline": "Strong signal amplitude and reflection strength are observed due to the high contrast between the pipeline material and the surrounding earth, leading to clear, continuous reflectors along the pipeline's path."
+        },
+        "[Spatial Scale]-[Feature Footprint]": {
+            "cavity": "At a medium-to-large spatial scale, cavities show irregular feature footprints with distinct high-reflectivity zones due to abrupt dielectric changes between air and surrounding materials, often coupled with diffractions and hyperbolic patterns.",
+            "crack": "At a small spatial scale, cracks have narrow feature footprints characterized by sharp, localized discontinuities in wave reflections, typically horizontal and linear, with less evidence at larger spatial scales unless aggregated.",
+            "loose": "Loose soil areas exhibit uneven feature footprints at a medium spatial scale, where chaotic and dispersed low-amplitude reflections highlight their irregular porosity; small-scale footprints are weaker due to diffuse signal scattering.",
+            "normal": "At all spatial scales, normal regions provide uniform and consistent feature footprints with smooth, layer-like reflections and low variability, offering no localized anomalies or disturbances.",
+            "pipeline": "At a medium spatial scale, pipelines generate distinct curved or hyperbolic feature footprints due to their cylindrical shape, with high-reflectivity points along the geometric boundaries of the object."
+        },
+        "[Reflection Continuity]-[Signal Coherence]": {
+            "cavity": "Exhibits low reflection continuity due to the irregular, air-filled void shapes and high signal coherence from strong, sharp reflections, often with diffraction patterns indicative of abrupt dielectric contrasts.",
+            "crack": "Displays abrupt breaks in reflection continuity and localized high signal coherence where sharp wave reflections occur at the air-filled gaps, making the waveform appear discontinuous.",
+            "loose": "Shows poor reflection continuity and low signal coherence due to chaotic, scattered waveforms caused by the heterogeneous and porous composition of the loose material.",
+            "normal": "High reflection continuity and high signal coherence are observed as consistent and regular waveforms, representing uniform and undisturbed subsurface layers.",
+            "pipeline": "High reflection continuity is present with moderate-to-high signal coherence, often seen as a consistent hyperbolic feature, representing the smooth surface and uniform material of the pipeline."
+        },
+        "[Physical Origin]-[Anomaly Source]": {
+            "cavity": "An air-filled underground structure exhibiting low relative dielectric constant, causing strong, high-amplitude EM wave reflections, with potential for diffraction patterns and irregular geometry.",
+            "crack": "Horizontal voids in the compact structure filled with air that produce sharp, localized reflections and waveform discontinuities due to air’s low permittivity.",
+            "loose": "High-porosity, low-density zones with mixed soil and air compositions disrupting compactness, leading to chaotic and diffuse reflected wave patterns.",
+            "normal": "Homogeneous, undisturbed underground without anomalies; reflects consistent wave velocity and low-contrast, smooth reflections across layers.",
+            "pipeline": "A subsurface object with high dielectric contrast (often metal or plastic), producing hyperbolic reflection signatures due to cylindrical shape and sharp impedance change."
+        },
+        "[Image Texture]-[Pattern Uniformity]": {
+            "cavity": "In the texture of GPR images, cavities often manifest as highly irregular patterns with non-uniform textures due to varying air-filled voids and potential diffraction effects, causing high contrast between adjacent image zones.",
+            "crack": "Image texture reveals cracks as segments with abrupt shifts in uniformity, demonstrating sudden breaks in the pattern along horizontal lines, reflecting the discontinuous thread of the structure.",
+            "loose": "The image texture is marked by a chaotic pattern and low uniformity in loose areas, attributed to the heterogeneous distribution of soil and air elements, leading to diffuse and scattered waveform responses.",
+            "normal": "Normal regions display a uniform pattern with smooth and consistent texture across the image, indicating an undisturbed and homogeneous subsurface without anomalies.",
+            "pipeline": "Pipelines tend to exhibit elongated textures with repeated shapes, presenting a high degree of uniformity along their path due to the consistent reflective characteristics of the pipeline structure."
+        },
+        "[Dimensionality]-[Feature Expression]": {
+            "cavity": "In the [Dimensionality]-[Feature Expression] view, the cavity appears as a distinct void or gap in the subsurface layers, characterized by exaggerated wave reflections and higher amplitude signals due to the stark contrast in dielectric properties between the material and air.",
+            "crack": "From the [Dimensionality]-[Feature Expression] perspective, cracks manifest as horizontal disruptions within the subsurface profile, marked by sudden changes in signal continuity and increased reflection amplitudes that disrupt typical waveform patterns.",
+            "loose": "The [Dimensionality]-[Feature Expression] view highlights loose areas as sections with fluctuating signal strengths and irregular waveform patterns, where diminished density and porosity create diverse reflection angles and chaotic waveforms due to uneven layer cohesion.",
+            "normal": "In the context of [Dimensionality]-[Feature Expression], normal subsurface conditions show consistent and uniform wave propagation, lacking abrupt amplitude changes or unusual echo patterns, thereby indicating a cohesive and homogeneous underground environment.",
+            "pipeline": "The [Dimensionality]-[Feature Expression] view presents pipelines as well-defined linear structures with consistent, repeatable high-amplitude wave reflections, due to the geometric regularity and the dielectric contrast between the pipeline material and surrounding soil."
+        },
+        "[Stratigraphic Relationship]-[Layer Interaction]": {
+            "cavity": "In the stratigraphic relationship, cavities appear as voids disrupting the continuity between layers, often leading to a lack of interaction with adjacent strata except at boundaries where air-filled regions result in notable reflective interfaces.",
+            "crack": "Stratigraphic relationships are notably disrupted as cracks lead to separated and disjointed layers, where wave interactions are characterized by abrupt discontinuities between what otherwise would be contiguous strata.",
+            "loose": "Loose areas disrupt layer interactions by causing diffuse stratigraphic boundaries, with weak and scattered interactions due to the irregular cohesion in the layers, which blur the distinction and connectivity between different subsurface strata.",
+            "normal": "Stratigraphic relationships in normal conditions are regular and consistent, reflecting stable and continuous interactions across homogenous and intact layers, showing predictable and undisturbed wave patterns.",
+            "pipeline": "The stratigraphic relationship with pipelines introduces organized layer disturbances, where interactions are consistent along the length of the pipeline, manifesting as distinct linear disruptions or reflections within the stratified subsurface layers."
+        },
+        "[Waveform Signature]-[Signal Complexity]": {
+            "cavity": "Waveform signatures for a cavity typically exhibit strong reflected EM waves with high complexity due to air's low dielectric constant, often displaying distinct diffraction patterns and potential multiple reflections.",
+            "crack": "Cracks in GPR data are characterized by waveform signatures showing abrupt discontinuities and high signal complexity due to the sharp interface between compact road materials and air-filled gaps.",
+            "loose": "The waveform signature for loose areas is chaotic with high complexity, as the irregular arrangement of soil and air pockets causes scattered reflections and diffuse signal behavior.",
+            "normal": "Normal subsurface conditions show minimal signal complexity with steady, consistent waveform signatures, as there are no structural anomalies to disrupt wave propagation.",
+            "pipeline": "The waveform signature for a pipeline typically shows periodic reflections with moderate complexity due to the consistent, predictable geometry of the object and its interaction with surrounding materials."
+        }
+    }
+}

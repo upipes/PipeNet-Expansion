@@ -1,0 +1,36 @@
+1. **cavity**:  
+   - **Stable evidence**: The presence of strong reflected electromagnetic (EM) waves and multiple reflections or diffractions due to the air-filled cavity's significantly lower dielectric constant remains a reliable indicator. This includes hyperbolic features typical of void-induced EM reflections.  
+   - **Domain shift**: The target domain includes unpaved roads, where the surrounding subsurface materials like soil or gravel may exhibit different dielectric properties compared to concrete or asphalt. This could alter the amplitude and sharpness of reflected waves as they propagate through potentially more heterogeneous media. Additionally, moisture content in unpaved roads may interfere with the clarity of cavity-related features.  
+   - **Boundary cue**: Look for persistent patterns of strong reflections and hyperbolic shapes in GPR B-scan images, even if the intensity varies with road type or surface condition. Variability in near-surface noise should be discounted as it depends on road composition.  
+
+---
+
+2. **crack**:  
+   - **Stable evidence**: Cracks are associated with abrupt discontinuities in GPR waveforms due to gaps filled by air. This typically results in sharp, localized reflections. The linear or elliptical geometry of these anomalies often points to a crack feature.  
+   - **Domain shift**: On unpaved roads, the distinction between cracks and loose subsurface materials might blur due to irregular interfaces and more diffusive wave behaviors. Noise caused by heterogeneous soil and water content could obscure sharp reflectivity patterns.  
+   - **Boundary cue**: Focus on isolated and discontinuous patterns with distinct linear alignment or abrupt breaks in reflection continuity, maintaining sensitivity to abrupt waveform changes despite potential variation in signal clarity.  
+
+---
+
+3. **loose**:  
+   - **Stable evidence**: Chaotic, diffuse reflected waves caused by higher porosity and a lack of cohesive subsurface structure are a robust indicator of loose regions. The irregular, scattered reflection signatures directly relate to the physical condition.  
+   - **Domain shift**: Loose regions beneath unpaved roads could show additional variability due to mixed soil types, higher water content, or vegetation. These factors could increase the signal's variability, making it harder to distinguish from normal variations in unpaved terrains. Moreover, the greater heterogeneity in unpaved roads might lead to false positives for loose conditions.  
+   - **Boundary cue**: Identify zones with excessive reflectivity variation and irregular scattered patterns, ensuring these regions are distinctly chaotic compared to relatively more uniform responses from other classes such as "normal" or "pipeline."  
+
+---
+
+4. **normal**:  
+   - **Stable evidence**: Uniform, undisturbed subsurface conditions with consistent, low-intensity GPR wave reflections are indicative of normal regions. The absence of significant anomalies or discontinuities is the hallmark.  
+   - **Domain shift**: Unpaved roads might naturally have slightly less uniformity due to variable soil composition, moisture, or minor surface roughness. This may introduce subtle deviations from perfectly smooth waveforms, which should not be misclassified as anomalies.  
+   - **Boundary cue**: Prioritize overall homogeneity and absence of significant reflection features while being robust to minor variations in amplitude or noise introduced by different surface types.  
+
+---
+
+5. **pipeline**:  
+   - **Stable evidence**: Strong, continuous hyperbolic reflections caused by pipelines remain consistent across domains. This is due to the high contrast in material properties between the pipeline (typically metal or plastic) and surrounding materials. Pipeline features often show regularity in shape, orientation, and position compared to other anomaly classes like "cavity."  
+   - **Domain shift**: In unpaved roads, fluctuating material properties and potential noise (e.g., from roots or inconsistent soil) might obscure or diffuse the hyperbolic response of pipelines. This could make pipeline signatures slightly less distinct or result in false positives.  
+   - **Boundary cue**: Emphasize the regularity and consistent geometric features of pipelines, such as symmetric hyperbolic reflections or recurring parallel patterns. Ensure the classifier can distinguish between high-intensity linear signals (pipelines) and irregular, strong reflections (e.g., cavities).  
+
+--- 
+
+Overall, a robust classifier must separate out environment-induced variability (e.g., heterogeneity in unpaved roads, differing moisture levels, and noise) from the consistent, structurally meaningful evidence inherent to each class. Stable geometric patterns in the GPR images—such as hyperbolas, discontinuities, and diffuse irregularities—should guide classification while allowing for amplitude and signal clarity variations across domains.

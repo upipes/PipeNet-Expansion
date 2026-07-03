@@ -1,0 +1,9 @@
+1. **cavity:** An air-filled underground structure exhibiting low relative dielectric constant, causing strong, high-amplitude EM wave reflections, with potential for diffraction patterns and irregular geometry.
+
+2. **crack:** Horizontal voids in the compact structure filled with air that produce sharp, localized reflections and waveform discontinuities due to air’s low permittivity.
+
+3. **loose:** High-porosity, low-density zones with mixed soil and air compositions disrupting compactness, leading to chaotic and diffuse reflected wave patterns.
+
+4. **normal:** Homogeneous, undisturbed underground without anomalies; reflects consistent wave velocity and low-contrast, smooth reflections across layers.
+
+5. **pipeline:** A subsurface object with high dielectric contrast (often metal or plastic), producing hyperbolic reflection signatures due to cylindrical shape and sharp impedance change.

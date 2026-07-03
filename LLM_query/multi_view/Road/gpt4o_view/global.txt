@@ -1,0 +1,9 @@
+cavity: A strong, high-amplitude reflection with a broad, irregular, or arching shape that disrupts the surrounding layers.
+
+crack: A sharp, thin, and continuous horizontal line with high amplitude that creates an abrupt discontinuity in the background layering.
+
+loose: A disorganized and chaotic texture of scattered, low-coherence, and moderate-to-low amplitude reflections that replace the normal layered pattern.
+
+normal: A uniform pattern of continuous, parallel, and sub-horizontal layers with low-to-moderate amplitude, representing an undisturbed condition.
+
+pipeline: A distinct, localized, and high-amplitude hyperbola (an inverted U-shape) that signifies a discrete, buried object.

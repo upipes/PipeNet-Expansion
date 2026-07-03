@@ -1,0 +1,9 @@
+cavity: A very high-amplitude reflection at its upper boundary, creating a bright, high-contrast signature.
+
+crack: A high-amplitude, sharp reflection that stands out clearly from the background layers.
+
+loose: Moderate to low-amplitude, non-uniform reflections with a low-contrast, noisy texture.
+
+normal: Low to moderate-amplitude background reflections with no localized high-amplitude events.
+
+pipeline: A localized high-amplitude reflection that forms a distinct, high-contrast curve.
