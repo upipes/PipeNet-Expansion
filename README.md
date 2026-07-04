@@ -47,7 +47,7 @@ If CUDA is used, install the PyTorch build that matches your local CUDA driver. 
 
 ## Prototype System
 
-The prototype system contains three modules. The following video provides a brief explanation. (Please click this image to download the video. For further details, please refer to the `Releases` on the right.)
+The prototype system contains three modules. The following video provides a brief explanation. Please click this image to download the video (119 MB). For further details, please refer to the `Releases` on the right.
 
 [![Cross-Area GPR System Demo](./figs/demo_cover.png)](https://github.com/upipes/PipeNet-Expansion/releases/download/v1.0/Demo_video.mp4)
 
