@@ -1,0 +1,26 @@
+﻿@import "./styles/01-base.css";
+@import "./styles/02-layout.css";
+@import "./styles/03-semantic-generation.css";
+@import "./styles/04-model-training.css";
+@import "./styles/05-model-testing.css";
+@import "./styles/06-modals-and-overrides.css";
+
+.classifier-save-progress {
+  margin: 18px 24px 0;
+  padding: 16px 18px;
+  border: 1px solid rgba(190, 211, 236, 0.9);
+  border-radius: 16px;
+  background: rgba(248, 251, 255, 0.9);
+  box-shadow: 0 14px 32px rgba(37, 54, 84, 0.08);
+}
+
+.classifier-save-progress .generation-modal-head {
+  margin-bottom: 10px;
+}
+
+.classifier-save-progress p {
+  margin: 10px 0 0;
+  color: #506381;
+  font-size: 12px;
+  font-weight: 800;
+}

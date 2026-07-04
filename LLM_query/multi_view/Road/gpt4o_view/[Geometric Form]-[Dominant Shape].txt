@@ -1,0 +1,9 @@
+cavity: A broad, high-amplitude reflection characterized by an irregular, arching, or sagging curved shape. It lacks the geometric regularity of a perfect hyperbola.
+
+crack: A feature defined by a distinctly linear and horizontal shape, appearing as a sharp, continuous or semi-continuous line that represents a horizontal gap in the structure.
+
+loose: An amorphous or chaotic shape that lacks a defined geometric form. The feature is recognized by the absence of coherent shapes and the presence of disorganized, scattered reflections.
+
+normal: A parallel, layered shape composed of multiple, continuous, and sub-horizontal linear reflections that represent the standard, undisturbed underground condition.
+
+pipeline: A distinct and localized hyperbolic shape (an inverted U-shape). This well-defined curve is the classic geometric signature of a cylindrical object in a B-scan.

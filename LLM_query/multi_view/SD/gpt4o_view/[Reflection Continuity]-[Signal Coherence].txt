@@ -1,0 +1,9 @@
+1. **cavity**: Exhibits low reflection continuity due to the irregular, air-filled void shapes and high signal coherence from strong, sharp reflections, often with diffraction patterns indicative of abrupt dielectric contrasts.
+
+2. **crack**: Displays abrupt breaks in reflection continuity and localized high signal coherence where sharp wave reflections occur at the air-filled gaps, making the waveform appear discontinuous.
+
+3. **loose**: Shows poor reflection continuity and low signal coherence due to chaotic, scattered waveforms caused by the heterogeneous and porous composition of the loose material.
+
+4. **normal**: High reflection continuity and high signal coherence are observed as consistent and regular waveforms, representing uniform and undisturbed subsurface layers.
+
+5. **pipeline**: High reflection continuity is present with moderate-to-high signal coherence, often seen as a consistent hyperbolic feature, representing the smooth surface and uniform material of the pipeline.

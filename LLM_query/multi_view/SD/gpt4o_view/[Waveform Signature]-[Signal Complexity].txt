@@ -1,0 +1,9 @@
+1. cavity: Waveform signatures for a cavity typically exhibit strong reflected EM waves with high complexity due to air's low dielectric constant, often displaying distinct diffraction patterns and potential multiple reflections.
+
+2. crack: Cracks in GPR data are characterized by waveform signatures showing abrupt discontinuities and high signal complexity due to the sharp interface between compact road materials and air-filled gaps.
+
+3. loose: The waveform signature for loose areas is chaotic with high complexity, as the irregular arrangement of soil and air pockets causes scattered reflections and diffuse signal behavior.
+
+4. normal: Normal subsurface conditions show minimal signal complexity with steady, consistent waveform signatures, as there are no structural anomalies to disrupt wave propagation.
+
+5. pipeline: The waveform signature for a pipeline typically shows periodic reflections with moderate complexity due to the consistent, predictable geometry of the object and its interaction with surrounding materials.

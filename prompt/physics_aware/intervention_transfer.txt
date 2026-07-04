@@ -1,0 +1,19 @@
+You are modeling transfer from source dataset {source_dataset} to target dataset {target_dataset}.
+Source domain: {source_domain}
+Target domain: {target_domain}
+View: {view}
+
+Classes:
+{numbered_classes}
+
+Base class priors:
+{class_block}
+
+For each class, explain:
+1. what evidence should remain stable from source to target
+2. what changes are likely caused by the target environment
+3. what features should guide a robust classifier boundary
+
+Output format:
+1. class_name: Stable evidence: ... Domain shift: ... Boundary cue: ...
+2. ...

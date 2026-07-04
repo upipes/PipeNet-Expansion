@@ -1,0 +1,9 @@
+cavity: A disruptive void that breaks the continuity of the surrounding layered structure.
+
+crack: A disruptive void that appears as a planar break within the layered structure.
+
+loose: A textural replacement where the original, coherent layered structure is substituted with a disorganized, chaotic zone.
+
+normal: The baseline structure itself, representing the coherent, layered background.
+
+pipeline: An embedded object that is situated within the baseline structure.

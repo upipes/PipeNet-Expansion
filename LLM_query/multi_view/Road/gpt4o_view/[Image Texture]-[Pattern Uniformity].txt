@@ -1,0 +1,5 @@
+cavity: Not applicable.
+crack: Not applicable.
+loose: A chaotic and heterogeneous texture. The pattern lacks uniformity and is characterized by disorganized, scattered reflections resulting from the irregular arrangement of soil properties.
+normal: A smooth and laminar texture. The pattern is highly uniform, composed of parallel and continuous layered reflections that indicate a standard, undisturbed condition.
+pipeline: Not applicable.

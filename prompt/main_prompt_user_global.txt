@@ -1,0 +1,8 @@
+Please provide a brief summary the main visual features of following [domains]:
+[numbered_class_set]
+
+Each category is described in a single line. The output format should follow this structure:
+
+1. [class 1]: [summary description of [class 1]]
+2. [class 2]: [summary description of [class 2]]
+3. ...

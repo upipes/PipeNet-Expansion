@@ -1,0 +1,9 @@
+1. **cavity**: [Irregular-Noncompact] Appears as irregularly shaped zones with chaotic or multiple reflections due to diffraction and air's low dielectric constant, often disrupting surrounding geometric uniformity.  
+
+2. **crack**: [Linear-Air Gap] Exhibits narrow, horizontal linear shapes with abrupt waveform discontinuities, indicating air-filled voids disrupting otherwise compact layers.
+
+3. **loose**: [Irregular-Diffuse Zone] Manifests as scattered areas of diffuse, irregular shapes with low cohesion, lacking clear geometric boundaries and coherent wave reflections.
+
+4. **normal**: [Continuous-Homogeneous Layer] Shows uniform, continuous geometric forms of compact, well-ordered layers without anomalies, maintaining consistent GPR waveform patterns.
+
+5. **pipeline**: [Circular/Hyperbolic-Solid Object] Characterized by distinct hyperbolic or circular geometric forms with sharp, strong reflections, indicating a buried solid structure.

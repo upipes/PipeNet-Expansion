@@ -1,0 +1,750 @@
+﻿/* Style module 2 of 6; order is defined by src/styles.css. */
+
+.area-input-form label {
+  display: grid;
+  grid-column: span 2;
+  gap: 8px;
+}
+
+.area-input-form label.wide-field {
+  grid-column: 1 / -1;
+}
+
+.area-input-form label.half-left-field {
+  grid-column: 1 / span 3;
+}
+
+.area-input-form label.half-right-field {
+  grid-column: 4 / span 3;
+}
+
+.range-group-field {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 8px;
+}
+
+.range-group-field > span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.range-group-field > span b {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.range-group-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.range-group-controls .range-placeholder {
+  min-height: 44px;
+}
+
+.area-input-form span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.area-input-form span b {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.area-input-form label.required-field span b {
+  color: #ff4d4f;
+}
+
+.area-input-form .required-star {
+  color: #ff4d4f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.area-input-form input,
+.area-input-form select,
+.area-input-form textarea,
+.range-group-controls input,
+.range-group-controls select {
+  height: 44px;
+  border: 1px solid rgba(194, 211, 232, 0.95);
+  border-radius: 13px;
+  padding: 0 14px;
+  color: var(--ink);
+  background: #f7fbff;
+  font-size: 15px;
+  font-weight: 750;
+  outline: none;
+}
+
+.area-input-form input::placeholder,
+.area-input-form textarea::placeholder {
+  color: #17243a;
+  opacity: 0.62;
+}
+
+.area-input-form select.is-placeholder {
+  color: #17243a;
+  opacity: 0.72;
+}
+
+.area-input-form textarea {
+  min-height: 96px;
+  padding: 12px 14px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.area-input-form input:focus,
+.area-input-form select:focus,
+.area-input-form textarea:focus,
+.range-group-controls input:focus,
+.range-group-controls select:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(47, 110, 234, 0.12);
+}
+
+.area-input-modal.target .area-input-form input:focus,
+.area-input-modal.target .area-input-form select:focus,
+.area-input-modal.target .area-input-form textarea:focus,
+.area-input-modal.target .range-group-controls input:focus,
+.area-input-modal.target .range-group-controls select:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(32, 167, 121, 0.12);
+}
+
+.area-input-actions {
+  padding: 0 24px 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.area-input-actions .cancel-input {
+  color: #526276;
+  background: #edf4fb;
+}
+
+.area-input-actions .save-input {
+  background: linear-gradient(135deg, var(--blue), var(--cyan));
+}
+
+.area-input-modal.target .area-input-actions .save-input {
+  background: linear-gradient(135deg, var(--green), var(--cyan));
+}
+
+.area-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 20px 26px 16px;
+}
+
+.area-detail-grid div {
+  min-width: 0;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(237, 244, 255, 0.86);
+}
+
+.area-detail-grid strong {
+  display: block;
+  margin-top: 8px;
+  color: #071327;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.area-json-panel {
+  margin: 0 26px 22px;
+  min-height: 0;
+  padding: 18px;
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: inset 0 0 0 1px rgba(215, 226, 239, 0.72);
+}
+
+.area-description-panel {
+  margin: -6px 26px 26px;
+  padding: 18px;
+  border-radius: 17px;
+  background:
+    linear-gradient(135deg, rgba(237, 244, 255, 0.86), rgba(234, 249, 244, 0.66));
+  box-shadow: inset 0 0 0 1px rgba(215, 226, 239, 0.72);
+}
+
+.area-description-panel span {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.area-description-panel p {
+  margin: 10px 0 0;
+  color: #24344d;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.area-detail-extra-grid {
+  margin: -10px 26px 26px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.area-detail-extra-grid section {
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: rgba(248, 252, 255, 0.9);
+  box-shadow: inset 0 0 0 1px rgba(215, 226, 239, 0.76);
+}
+
+.area-detail-extra-grid span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.area-detail-extra-grid p {
+  margin: 8px 0 0;
+  color: #24344d;
+  font-size: 15px;
+  line-height: 1.58;
+}
+
+.area-json-panel strong {
+  display: block;
+  margin-top: 7px;
+  color: #17243a;
+  font-size: 15px;
+}
+
+.area-json-panel pre {
+  max-height: 270px;
+  overflow: auto;
+  margin: 12px 0 0;
+  padding: 14px;
+  border-radius: 12px;
+  color: #233047;
+  background: #f2f6fb;
+  font-size: 13px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
+.json-error {
+  margin: 12px 0 0;
+  color: #e33d3d;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.context-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.context-meta div {
+  min-width: 0;
+  min-height: 66px;
+  padding: 13px 12px;
+  border-radius: 13px;
+  background: rgba(241, 246, 252, 0.9);
+}
+
+.source .context-meta div {
+  background: rgba(237, 244, 255, 0.9);
+}
+
+.target .context-meta div {
+  background: rgba(234, 249, 244, 0.9);
+}
+
+.soil-context {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  align-content: center;
+  gap: 0;
+  justify-content: stretch;
+}
+
+.soil-composition,
+.soil-electrical {
+  display: grid;
+  gap: 8px;
+}
+
+.soil-composition {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.soil-electrical {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.context-meta span,
+.metric-row span,
+.generation-box p,
+.score-line span {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.context-meta strong {
+  display: block;
+  margin-top: 8px;
+  color: #26344a;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.soil-water {
+  margin-top: 2px;
+  padding-bottom: 0;
+}
+
+.soil-electrical {
+  margin-top: 12px;
+}
+
+.soil-context > .metric-row {
+  margin-top: 12px;
+}
+
+.soil-context .metric-row {
+  height: 30px;
+}
+
+.soil-context .soil-composition .metric-row {
+  height: 30px;
+}
+
+.soil-context .metric-row > div {
+  margin-bottom: 6px;
+}
+
+.soil-context .metric-row span {
+  font-size: 10px;
+}
+
+.soil-context .metric-row b {
+  font-size: 11px;
+}
+
+.metric-stack {
+  display: grid;
+  gap: 16px;
+  margin-top: 17px;
+  padding-bottom: 2px;
+}
+
+.metric-row > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.metric-row b {
+  color: #3d4e66;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.metric-row {
+  position: relative;
+  height: 31px;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.metric-row.range {
+  cursor: default;
+}
+
+.metric-row::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8px;
+  border-radius: 999px;
+  background: #e6eef8;
+  transition: background 0.16s ease, box-shadow 0.16s ease;
+}
+
+.metric-row:hover::after {
+  background: #d9e7f6;
+  box-shadow: inset 0 0 0 1px rgba(47, 110, 234, 0.12);
+}
+
+.target .metric-row:hover::after {
+  box-shadow: inset 0 0 0 1px rgba(32, 167, 121, 0.14);
+}
+
+.metric-row i {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--blue), var(--cyan));
+  box-shadow: 0 0 16px rgba(22, 184, 200, 0.26);
+}
+
+.target .metric-row i {
+  background: linear-gradient(90deg, var(--green), var(--cyan));
+  box-shadow: 0 0 16px rgba(32, 167, 121, 0.24);
+}
+
+.metric-row.point i {
+  width: 8px;
+  height: 8px;
+  transform: translateX(-50%);
+  overflow: visible;
+}
+
+.metric-row.point i::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 2px;
+  height: 16px;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  background: var(--blue);
+  box-shadow: 0 0 14px rgba(47, 110, 234, 0.28);
+}
+
+.target .metric-row.point i::before {
+  background: var(--green);
+  box-shadow: 0 0 14px rgba(32, 167, 121, 0.26);
+}
+
+.range-handle {
+  position: absolute;
+  bottom: -4px;
+  z-index: 2;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background: var(--blue);
+  box-shadow: 0 8px 16px rgba(47, 110, 234, 0.3);
+  transform: translateX(-50%);
+  cursor: grab;
+}
+
+body.is-range-dragging,
+body.is-range-dragging * {
+  cursor: grabbing !important;
+}
+
+.target .range-handle {
+  background: var(--green);
+  box-shadow: 0 8px 16px rgba(32, 167, 121, 0.28);
+}
+
+.range-handle:hover {
+  transform: translateX(-50%) scale(1.08);
+}
+
+.generation-box {
+  min-height: 76px;
+  padding: 12px 15px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 106px;
+  column-gap: 12px;
+  row-gap: 9px;
+  align-items: start;
+}
+
+.generation-box strong {
+  display: block;
+  color: #1f2c40;
+  font-size: 17px;
+  line-height: 1.2;
+  transform: translateY(4px);
+}
+
+.generation-box p {
+  margin: 5px 0 0;
+  line-height: 1.45;
+}
+
+.generation-copy {
+  min-width: 0;
+}
+
+.generation-option-row {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(118px, 1fr) auto auto;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  transform: translateY(-4px);
+}
+
+.generation-select-wrap {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  color: #37475c;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.generation-select-wrap select {
+  min-width: 0;
+  height: 30px;
+  padding: 0 28px 0 10px;
+  border: 1px solid rgba(190, 211, 236, 0.96);
+  border-radius: 10px;
+  color: #0b1830;
+  background: #f4f8fd;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  outline: none;
+}
+
+.target .generation-select-wrap select {
+  border-color: rgba(32, 167, 121, 0.22);
+  background: #f0fbf6;
+}
+
+.assist-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  color: #37475c;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.assist-control.compact {
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.assist-control input {
+  display: none;
+}
+
+.assist-control em {
+  position: relative;
+  width: 38px;
+  height: 20px;
+  border-radius: 999px;
+  border: 1px solid #bfd0e3;
+  background: #fff;
+}
+
+.assist-control em::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #9fb0c5;
+  transition: 0.18s ease;
+}
+
+.assist-control input:checked + em {
+  border-color: var(--blue);
+  background: #edf4ff;
+}
+
+.assist-control input:checked + em::after {
+  left: 22px;
+  background: var(--blue);
+}
+
+.target .assist-control input:checked + em {
+  border-color: var(--green);
+  background: #eaf9f4;
+}
+
+.target .assist-control input:checked + em::after {
+  background: var(--green);
+}
+
+.primary-action {
+  width: 104px;
+  height: 35px;
+  justify-content: center;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 12px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--blue), var(--cyan));
+  box-shadow: 0 14px 28px rgba(47, 110, 234, 0.24);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.generation-controls {
+  display: grid;
+  justify-items: end;
+  align-content: start;
+  gap: 7px;
+  min-height: 36px;
+}
+
+.target .primary-action {
+  background: linear-gradient(135deg, var(--green), var(--cyan));
+  box-shadow: 0 14px 28px rgba(32, 167, 121, 0.22);
+}
+
+.generation-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  background: rgba(238, 244, 250, 0.72);
+  backdrop-filter: blur(7px);
+}
+
+.generation-modal {
+  width: min(380px, 92%);
+  padding: 18px;
+  border: 1px solid rgba(190, 211, 236, 0.92);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 88% 8%, rgba(22, 184, 200, 0.12), transparent 14rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 251, 255, 0.96));
+  box-shadow: 0 28px 70px rgba(24, 40, 68, 0.22);
+}
+
+.generation-modal.target {
+  border-color: rgba(32, 167, 121, 0.28);
+  background:
+    radial-gradient(circle at 88% 8%, rgba(32, 167, 121, 0.12), transparent 14rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 252, 249, 0.96));
+}
+
+.generation-modal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.generation-modal-head span {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.generation-modal-head h3 {
+  margin: 5px 0 0;
+  color: #071327;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.generation-modal-head b {
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.generation-modal.target .generation-modal-head b {
+  color: var(--green);
+}
+
+.generation-progress {
+  position: relative;
+  height: 10px;
+  margin: 18px 0 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e6eef8;
+}
+
+.generation-progress i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--blue), var(--cyan));
+  box-shadow: 0 0 18px rgba(22, 184, 200, 0.25);
+  transition: width 0.22s ease;
+}
+
+.generation-modal.target .generation-progress i {
+  background: linear-gradient(90deg, var(--green), var(--cyan));
+}
+
+.generation-modal.warning .generation-progress i {
+  background: linear-gradient(90deg, #e8a23c, #f6c560);
+}
+
+.generation-modal.error .generation-progress i {
+  background: linear-gradient(90deg, #f36a6d, #ff9c9c);
+}
+
+.generation-modal p {
+  min-height: 18px;
+  margin: 0;
+  color: #40516a;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.generation-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.generation-modal-actions button {
+  height: 34px;
+  min-width: 88px;
+  border: 0;
+  border-radius: 11px;
+  color: #e89a22;
+  background: #fff6e9;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.generation-modal-actions button:hover {
+  background: #ffefd9;
+}
+
+.semantic-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  display: grid;
+  gap: 12px;
+}

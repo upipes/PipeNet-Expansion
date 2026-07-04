@@ -1,0 +1,16 @@
+Given a GPR domain and a class set, generate physics-aware semantic descriptions for each class. 
+
+The classes included are as follows: 
+{numbered_classes}
+
+For each class, describe its expected radar manifestation under this domain. 
+The description should be short and reflect how the physical sensing condition of this domain may shape the class-specific B-scan appearance.
+
+First, please consider the general characteristics of this class. 
+Second, identify which potential instability features are triggered by the specific attributes of this domain. 
+Third, determine the key radar-discriminating features for this class, explaining which domain-specific factors influence its differentiation.
+
+The description must include the key radar-discriminating features, as well as a class description grounded in the specific attributes of this domain.
+Only return the final description and follow the structure: 
+1. class_name: description
+2. ...

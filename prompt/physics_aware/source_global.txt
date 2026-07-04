@@ -1,0 +1,11 @@
+For dataset {dataset} in domain "{domain}", produce one global semantic summary for each class below.
+
+Classes:
+{numbered_classes}
+
+Base class priors:
+{class_block}
+
+Output format:
+1. class_name: one paragraph summarizing stable physical meaning, dominant response pattern, likely reflectors, discriminative cues, and common confounders.
+2. ...

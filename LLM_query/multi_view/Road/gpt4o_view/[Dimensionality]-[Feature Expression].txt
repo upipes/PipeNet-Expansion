@@ -1,0 +1,9 @@
+cavity: The feature is visually defined by its one-dimensional (1D) continuous boundary, which in turn encloses a two-dimensional (2D) zone. Its expression is therefore a composite of a 1D curve defining a 2D area.
+
+crack: The feature primarily expresses itself as a one-dimensional (1D) linear element. Its visual extent in the horizontal direction is significantly greater than its vertical extent, appearing as a distinct line rather than a point or an area.
+
+loose: This feature manifests as a purely two-dimensional (2D) area. Its identification relies not on a boundary or a specific shape, but on the unique, chaotic textural properties within the region, making it a classic areal feature.
+
+normal: The feature is composed of a stack of multiple one-dimensional (1D) linear elements. The overall visual is constructed from these parallel, individual linear reflections rather than a contiguous 2D area or an isolated point.
+
+pipeline: The feature originates from a zero-dimensional (0D) point diffractor but is expressed in the B-scan image as it unfolds into a one-dimensional (1D) curve. Its expression is therefore a mapping from a 0D source to a 1D trajectory.

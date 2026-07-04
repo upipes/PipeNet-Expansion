@@ -1,0 +1,9 @@
+1. **cavity**: At a medium-to-large spatial scale, cavities show irregular feature footprints with distinct high-reflectivity zones due to abrupt dielectric changes between air and surrounding materials, often coupled with diffractions and hyperbolic patterns.
+
+2. **crack**: At a small spatial scale, cracks have narrow feature footprints characterized by sharp, localized discontinuities in wave reflections, typically horizontal and linear, with less evidence at larger spatial scales unless aggregated.
+
+3. **loose**: Loose soil areas exhibit uneven feature footprints at a medium spatial scale, where chaotic and dispersed low-amplitude reflections highlight their irregular porosity; small-scale footprints are weaker due to diffuse signal scattering.
+
+4. **normal**: At all spatial scales, normal regions provide uniform and consistent feature footprints with smooth, layer-like reflections and low variability, offering no localized anomalies or disturbances.
+
+5. **pipeline**: At a medium spatial scale, pipelines generate distinct curved or hyperbolic feature footprints due to their cylindrical shape, with high-reflectivity points along the geometric boundaries of the object.

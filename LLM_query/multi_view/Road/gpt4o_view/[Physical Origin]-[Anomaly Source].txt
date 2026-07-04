@@ -1,0 +1,5 @@
+cavity: An anomaly originating from a structural void, representing an air-filled underground structure.
+crack: An anomaly originating from a planar discontinuity, representing a horizontal gap within a compact structure.
+loose: An anomaly originating from a material condition, representing a soil area with higher porosity and lower density.
+normal: The signal originates from the baseline condition, representing a standard, undisturbed underground state without anomalies.
+pipeline: An anomaly originating from a discrete object beneath the road surface.

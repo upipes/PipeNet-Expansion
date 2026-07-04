@@ -1,0 +1,11 @@
+For dataset {dataset} in domain "{domain}", describe how each class appears from the view "{view}" in the target environment.
+
+Classes:
+{numbered_classes}
+
+Base class priors:
+{class_block}
+
+Output format:
+1. class_name: target-domain view-specific description emphasizing environmental modulation and class-preserving evidence.
+2. ...

@@ -1,0 +1,5 @@
+Cavity: Air-filled underground structures of irregular shapes beneath roads, causing subsidence. Characterized by strong reflected EM waves and potential multiple reflections and diffraction due to air's lower dielectric constant.
+Crack: Presence of horizontal gaps within the compact underground road structure, typically filled with air. These cracks cause wave reflections and abrupt discontinuities in waveforms.
+Loose: Soil areas with higher porosity and lower density, resulting in reduced cohesion and compactness. This condition, akin to a mix of soil and air, leads to chaotic reflected waves in GPR data due to the irregular arrangement of soil properties.
+Normal: Areas without any subsurface anomalies or objects, indicating a standard, undisturbed underground condition.
+Pipeline: Presence of a pipeline object beneath the road surface.

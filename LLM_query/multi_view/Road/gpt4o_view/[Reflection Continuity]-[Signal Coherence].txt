@@ -1,0 +1,9 @@
+cavity: The main reflection from the upper boundary of the feature is typically a continuous curve.
+
+crack: The feature is characterized by its high horizontal continuity, appearing as an unbroken or semi-broken line.
+
+loose: The feature is defined by its high discontinuity, with signals appearing scattered, incoherent, and broken.
+
+normal: The layered reflections are characterized by high horizontal continuity and consistency.
+
+pipeline: The hyperbolic curve that defines the feature is a continuous line.

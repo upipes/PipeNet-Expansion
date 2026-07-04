@@ -1,0 +1,18 @@
+{
+    "target_dataset": "Road",
+    "llm_name": "gpt4o",
+    "classnames": [
+        "cavity",
+        "crack",
+        "loose",
+        "normal",
+        "pipeline"
+    ],
+    "parsed": {
+        "cavity": "Original cue: Strong reflected EM waves with potential multiple reflections and diffraction caused by air's lower dielectric constant in irregular, air-filled underground structures. Replaced-with cue: Chaotic reflected waves akin to irregular soil porosity, a cue characteristic of the loose class. Counterfactual effect: The irregular and chaotic reflected waves would push the cavity class toward the loose class, as the substitution reduces the distinctiveness of cavity-related strong reflections and diffraction patterns, making it resemble loosely compacted soil conditions.",
+        "crack": "Original cue: Horizontal gaps filled with air causing wave reflections and abrupt discontinuities in GPR waveforms. Replaced-with cue: No wave anomalies, resembling the homogeneous structure of normal road surfaces with no subsurface anomalies. Counterfactual effect: The description would shift the crack class toward the normal class, as the absence of abrupt waveform discontinuities mimics undisturbed subsurface conditions.",
+        "loose": "Original cue: Chaotic reflected waves due to higher porosity and lower density of soil, indicating irregular underground arrangements. Replaced-with cue: Strong reflected EM waves and diffraction patterns, typically caused by air-filled cavities. Counterfactual effect: The substitution would shift the loose class toward the cavity class, as the characteristics of the replaced cue are inconsistent with the diffuse reflections from porous soil and instead suggest a localized air-filled anomaly.",
+        "normal": "Original cue: Homogeneous subsurface with no anomalies, leading to undisturbed GPR wave patterns. Replaced-with cue: Wave reflections and abrupt discontinuities in the signal, characteristic of horizontal gaps found within the crack class. Counterfactual effect: The substituted cue would shift the normal class toward the crack class, as the abrupt discontinuities in the waveform contradict the absence of subsurface anomalies in the original normal class.",
+        "pipeline": "Original cue: Presence of a subsurface pipeline object causing a distinct hyperbolic reflection pattern in GPR data. Replaced-with cue: Strong reflected EM waves suggestive of air-filled cavities with diffraction patterns. Counterfactual effect: The substituted cue may cause confusion between pipeline and cavity classes; however, the lack of a hyperbolic reflection pattern would reduce the distinctiveness of the pipeline class and push it toward the cavity class."
+    }
+}

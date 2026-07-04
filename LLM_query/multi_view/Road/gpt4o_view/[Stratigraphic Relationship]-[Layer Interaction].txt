@@ -1,0 +1,9 @@
+cavity: A feature that cuts through and disrupts the continuity of the background stratigraphy.
+
+crack: A feature that runs parallel to the stratigraphy, creating an abrupt discontinuity.
+
+loose: A feature that erases and replaces the original stratigraphy with a chaotic pattern.
+
+normal: A feature that defines the stratigraphy, composed of continuous, parallel layers.
+
+pipeline: An embedded feature situated within the existing layers.

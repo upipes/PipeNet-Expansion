@@ -1,0 +1,9 @@
+cavity: A complex signature characterized by a very strong primary reflection, which may be followed by secondary, internal reflections or "ringing".
+
+crack: A simple and clean signature that appears as a single, sharp, high-amplitude spike in the waveform trace.
+
+loose: A complex and noisy signature with high entropy, characterized by many disorganized, low-to-moderate amplitude reflections.
+
+normal: A simple and repetitive signature consisting of a series of clean, parallel, and predictable reflections.
+
+pipeline: A simple and clean signature that forms a distinct, high-amplitude hyperbola.

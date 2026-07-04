@@ -1,0 +1,9 @@
+cavity: A large-scale feature, typically appearing as a broad anomaly within the image frame.
+
+crack: A fine-scale feature that manifests as a thin, linear anomaly.
+
+loose: A volumetric feature of variable size, appearing as a textured zone rather than a discrete object.
+
+normal: The entire image scale, representing the baseline background condition without localized features.
+
+pipeline: A medium-scale, localized feature that appears as a discrete anomaly within the image.

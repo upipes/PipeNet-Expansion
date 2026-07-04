@@ -1,0 +1,16 @@
+The domain includes the classes: 
+{numbered_classes}.
+
+Generate and list 10 distinct and useful semantic views.
+A semantic view means an observation perspective used to describe how a class appears in GPR B-scan images. 
+Each view should correspond to a physically meaningful aspect of GPR imaging, rather than a generic visual attribute.
+
+First, analyze the domain to identify which physical or data-acquisition factors may influence the visual presentation of GPR B-scan images. 
+Second, determine the types of evidence required to distinguish between various targets or conditions. 
+Third, synthesize and integrate these various forms of evidence into reusable semantic views, ensuring that each view is applicable across all categories.
+
+Only shortly output the final perspectives, where the output format should follow this structure: 
+1. [Coarse-grained dimension]-[Fine-grained view]
+2. ...
+
+
