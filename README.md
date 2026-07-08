@@ -1,17 +1,24 @@
-﻿# Cross-Area Adaptation for Subsurface Diagnosis Guided by Environmental Knowledge
+# Cross-Area Adaptation for Subsurface Diagnosis Guided by Environmental Knowledge
 
-This is the repository for "<i>Cross-Area Adaptation for Subsurface Diagnosis Guided by Environmental Knowledge</i>" submission.
+This is the repository for "<i>Cross-Area Adaptation for Subsurface Diagnosis Guided by Environmental Knowledge</i>" submission, which provides the implementation and prototype system.
+
+Ground Penetrating Radar (GPR) enables non-destructive inspection of roads and buried infrastructure. However, GPR signals are strongly affected by local subsurface conditions, including soil composition, water content, and road-layer structure. Therefore, a classifier trained in one area may not perform reliably when applied to a new area with different environmental conditions.
+
+Our method incorporates subsurface environmental knowledge to characterize how different targets may appear under changing imaging conditions. Based on these descriptions, it adapts an original-area classifier and constructs classifier weights for a new area, reducing the reliance on labeled data from the new area.
 
 <p align="center">
-  <img src="figs/framework.png" />
+  <img src="figs/mission.png" />
+</p>
+<p align="center">
+  <em>Overview of cross-area GPR subsurface diagnosis under changing environmental conditions.</em>
 </p>
 
-This repository contains the code, data, trained-model interfaces, and prototype system for a cross-area Ground Penetrating Radar (GPR) subsurface diagnosis study. The project focuses on using environmental knowledge and class semantics to improve diagnosis when the original established area and the new application area have different sensing conditions, soil properties, and signal behaviors.
 
-The repository contains two connected parts:
+The repository contains three connected parts:
 
-- Research code for semantic generation, original classifier training, cross-area model training, baseline comparison, and Grad-CAM visualization.
-- A Vue + Django prototype system named **Cross-Area GPR Subsurface Diagnosis System** demonstrates the full workflow from area description to semantic generation and classifier construction.
+- Research code for semantic generation, classifier training, cross-area adaptation, baseline comparison, and visualization.
+- Prepared real-world and simulated GPR datasets.
+- A Vue + Django prototype system named "<i>Cross-Area GPR Subsurface Diagnosis System</i>" demonstrates the full workflow from area description to semantic generation and classifier construction.
 
 ## Repository Structure
 
@@ -35,7 +42,7 @@ submission/
 `-- requirements.txt                 # Dependencies
 ```
 
-## Environment
+## Quick Start
 
 The code was developed with Python 3.8, PyTorch, Vue, and Django.
 
@@ -45,11 +52,43 @@ pip install -r requirements.txt
 
 If CUDA is used, install the PyTorch build that matches your local CUDA driver. Most experiment commands assume GPU execution with `CUDA_VISIBLE_DEVICES=0`.
 
-## Prototype System
 
-The prototype system contains three modules. The following video provides a brief explanation. Please click this image to download the video (119 MB). For further details, please refer to the `Releases` on the right.
+
+
+
+
+
+## Overall Framework
+
+<p align="center">
+  <img src="figs/framework.png" />
+</p>
+<p align="left">
+  <em>
+	Overview of the proposed framework, including Physics-aware Semantic Generation (PSG),
+    Iterative State Refinement (ISR), and Causal Transformation Alignment (CTA).
+  </em>
+</p>
+
+
+## Detailed Prototype System
+
+The prototype system contains three modules. The following animation provides a brief overview of the complete workflow, including area configuration, semantic generation, classifier construction, feature visualization, and model evaluation.
+
+<p align="center">  
+    <img src="figs/system_demo.gif" width="100%" alt="Cross-Area GPR Subsurface Diagnosis System demo"></p>
+<p align="center">  <em>Overview of the Cross-Area GPR Subsurface Diagnosis System.</em></p>
+
+For a complete demonstration with narration and detailed interactions, please <a href="https://github.com/upipes/PipeNet-Expansion/releases/download/v1.0/Demo_video.mp4" style="color:#1f6feb; font-weight:600;">download</a> (or click this image) the demo video for full system (129MB). For further details, please refer to the `Releases` on the right.
 
 [![Cross-Area GPR System Demo](./figs/demo_cover.png)](https://github.com/upipes/PipeNet-Expansion/releases/download/v1.0/Demo_video.mp4)
+
+<p align="center">
+  <a href="https://github.com/upipes/PipeNet-Expansion/releases/download/v1.0/Demo_video.mp4" download>
+    <strong>Download the demo video for full system ↑↑↑</strong>
+  </a>
+</p>
+
 
 ### Semantic Generation
 
@@ -152,7 +191,7 @@ The database stores semantic generation runs and descriptions with domain, LLM n
 
 ## Original Classifier Training
 
-Original-domain classifiers can be trained through `main.py` or through the Django backend. A typical original-classifier command is:
+Original-area classifiers can be trained through `main.py` or through the Django backend. A typical original-classifier command is:
 
 ```bash
 $ CUDA_VISIBLE_DEVICES=0 python main_base.py --cuda --manualSeed 0 --dataset=SD --image_embedding=pretrained_resnet50 --class_embedding=llama --factual_branch=attention --intervention_branch=attention --source_only_benchmark --cos_sim_loss --llm=gpt4o --include_new --num_layers 2 --beta1 0.9 --lr 0.00001 --batch_size 8 --embed_dim 2048 --strict_eval --early_stopping_slope --calc_entropy --save_pred_matrix --nepoch=500 --zst --zstfrom=Road --norm_scale_heuristic
